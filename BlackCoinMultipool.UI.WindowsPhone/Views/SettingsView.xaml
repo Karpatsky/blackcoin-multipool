@@ -37,7 +37,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <TextBlock Text="{Binding Path=LocalizedResources.SettingsCurrentlySetAddress, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" />
-            <TextBlock Grid.Row="1" Text="{Binding BitcoinAddress, Mode=TwoWay}" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Grid.Row="1" Text="{Binding BlackCoinAddress, Mode=TwoWay}" Style="{StaticResource PhoneTextNormalStyle}"/>
             <Button Margin="0,0"  Grid.Row="3" Content="{Binding Path=LocalizedResources.SettingsChangeAddress, Source={StaticResource LocalizedStrings}}" Command="{Binding ClearAddressCommand}" />
 
         </Grid>

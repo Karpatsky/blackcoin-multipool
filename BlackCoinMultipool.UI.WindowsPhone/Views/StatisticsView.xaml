@@ -27,7 +27,7 @@
             <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PageCurrentHashrateScrypt, Source={StaticResource LocalizedStrings}}">
                 <Grid>
                     <controls:Gauge Value="{Binding CurrentHashrateScrypt, Mode=TwoWay}"
-                            Unit="{Binding Path=LocalizedResources.kHashPerSecond, Source={StaticResource LocalizedStrings}}"
+                            Unit="{Binding Path=LocalizedResources.MHashPerSecond, Source={StaticResource LocalizedStrings}}"
                             Grid.Column="1"
                             Margin="5 0 0 10"
                             NeedleBrush="Transparent"
@@ -36,7 +36,7 @@
                             UnitBrush="{StaticResource PhoneForegroundBrush}"
                             ValueBrush="{StaticResource PhoneForegroundBrush}"
                             Minimum="0"
-                            Maximum="1000"
+                            Maximum="10"
                             ScaleWidth="35"
                             TickBrush="Transparent"
                             ValueStringFormat="####.#">
@@ -52,7 +52,7 @@
             <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PageCurrentHashrateSha256, Source={StaticResource LocalizedStrings}}">
                 <Grid>
                     <controls:Gauge Value="{Binding CurrentHashrateSha256, Mode=TwoWay}"
-                            Unit="{Binding Path=LocalizedResources.kHashPerSecond, Source={StaticResource LocalizedStrings}}"
+                            Unit="{Binding Path=LocalizedResources.THashPerSecond, Source={StaticResource LocalizedStrings}}"
                             Grid.Column="1"
                             Margin="5 0 0 10"
                             NeedleBrush="Transparent"
@@ -61,7 +61,7 @@
                             UnitBrush="{StaticResource PhoneForegroundBrush}"
                             ValueBrush="{StaticResource PhoneForegroundBrush}"
                             Minimum="0"
-                            Maximum="1000"
+                            Maximum="10"
                             ScaleWidth="35"
                             TickBrush="Transparent"
                             ValueStringFormat="####.#">

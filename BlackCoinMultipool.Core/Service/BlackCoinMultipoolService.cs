@@ -17,8 +17,9 @@ namespace BlackCoinMultipool.Core.Service
             string pageHtml = await GetPage(bitcoinAddress);
 
             Statistics stats = await ParsePage(pageHtml);
+            stats.Address = bitcoinAddress;
 
-            return new Statistics() { Address = bitcoinAddress, HashRateScrypt = 900.6, CurrentSharesScrypt = 16325, LatestPayoutScrypt = 20.23 };
+            return stats;
         }
 
         private async Task<string> GetPage(string bitcoinAddress)
@@ -38,10 +39,58 @@ namespace BlackCoinMultipool.Core.Service
         {
             return Task.Run(() =>
             {
+                var statistics = new Statistics();
+
+                try
+                {
+                    HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
+                    doc.LoadHtml(pageHtml);
+
+                    //HtmlAgilityPack.HtmlNode bodyNode = doc.DocumentNode.
+
+                    var payouts = doc.DocumentNode.Descendants("h2")
+                                    .First(e => e.InnerText == "Latest Payouts").NextSibling.InnerText;
+                    string[] payoutsSplitted = payouts.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+                    statistics.LatestPayoutScrypt = Convert.ToDouble(payoutsSplitted[1]);
+                    statistics.LatestPayoutSHA256 = Convert.ToDouble(payoutsSplitted[5]);
 
 
+                    var hashrate = doc.DocumentNode.Descendants("h2")
+                                    .First(e => e.InnerText == "Current hashrate (10 min average)").NextSibling.InnerText;
+                    string[] hashrateSplitted = hashrate.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
 
-                return new Statistics();
+                    statistics.HashRateScrypt = Convert.ToDouble(hashrateSplitted[1]);
+                    statistics.HashRateSHA256 = Convert.ToDouble(hashrateSplitted[5]);
+
+                    var shares = doc.DocumentNode.Descendants("h2")
+                                    .First(e => e.InnerText == "Current Shares").NextSibling.InnerText;
+                    string[] sharesSplitted = shares.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+
+                    statistics.CurrentSharesScrypt = Convert.ToInt64(sharesSplitted[1]);
+                    statistics.CurrentSharesSHA256 = Convert.ToInt64(sharesSplitted[4]);
+
+                    statistics.Shifts = new List<Shift>();
+
+                    var shifts = doc.DocumentNode.Descendants("tbody").First().Descendants("tr");
+                    foreach (var shift in shifts)
+                    {
+                        var shiftData = shift.Descendants("td").ToList();
+                        var shiftObject = new Shift()
+                        {
+                            Timestamp = DateTimeOffset.UtcNow,
+                            Shares = Convert.ToInt64(shiftData[1].InnerText),
+                            TotalShares = Convert.ToInt64(shiftData[2].InnerText),
+                            AverageHashrate = Convert.ToDouble(shiftData[3].InnerText),
+                            Profitability = Convert.ToDouble(shiftData[4].InnerText),
+                            BlackCoinSent = Convert.ToDouble(shiftData[5].InnerText),
+                            PayedOut = true
+                        };
+                        statistics.Shifts.Add(shiftObject);
+                    }
+                }
+                catch { }
+
+                return statistics;
             });
         }
     }

@@ -12,7 +12,7 @@ namespace BlackCoinMultipool.UI.WindowsPhone.Service
     {
         public string DonationAddress
         {
-            get { return "1ALHfhe77VTzogkkBnQkTgH881VHhioczU"; }
+            get { return "BM4mL6tSo9EphkrnNBppzhjg5GsCXa9C2e"; }
         }    
 
         public string PopupOk

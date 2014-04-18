@@ -142,6 +142,8 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\blackcoinlogo.png" />
+    <Content Include="Assets\donate_qrcode.png" />
     <Content Include="Assets\Icons\appbar.donate.png" />
     <Content Include="Assets\Icons\appbar.refresh.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">

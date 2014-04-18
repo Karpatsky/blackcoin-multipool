@@ -21,6 +21,7 @@ namespace BlackCoinMultipool.Core.Service
         string StatisticsDay { get; }
         string StatisticsDays { get; }
         string BTC { get; }
+        string BC { get; }
         string StatisticsAgo { get; }
     }
 }

@@ -155,14 +155,14 @@
   <data name="MHashPerSecond" xml:space="preserve">
     <value>MHash/s</value>
   </data>
-  <data name="PageBalances" xml:space="preserve">
-    <value>balances</value>
+  <data name="PageShifts" xml:space="preserve">
+    <value>shifts</value>
   </data>
   <data name="PageGettingStarted" xml:space="preserve">
     <value>WELCOME</value>
   </data>
-  <data name="PageLastHourHashrate" xml:space="preserve">
-    <value>1 hr hashrate</value>
+  <data name="PageCurrentHashrateScrypt" xml:space="preserve">
+    <value>scrypt hashrate</value>
   </data>
   <data name="PageStatistics" xml:space="preserve">
     <value>statistics</value>
@@ -179,8 +179,8 @@
   <data name="StatisticsLast24hProfits" xml:space="preserve">
     <value>last 24h profits</value>
   </data>
-  <data name="StatisticsLastPayout" xml:space="preserve">
-    <value>last payout</value>
+  <data name="StatisticsLatestPayoutScrypt" xml:space="preserve">
+    <value>Latest scrypt payout</value>
   </data>
   <data name="StatisticsMiningDays" xml:space="preserve">
     <value>mining days</value>
@@ -195,7 +195,7 @@
     <value>automatic</value>
   </data>
   <data name="GettingStartedExplanation" xml:space="preserve">
-    <value>Click the button below to scan your Bitcoin-address's QR code. You can also enter your Bitcoin-address manually to the right</value>
+    <value>Click the button below to scan your blackcoin-address's QR code. You can also enter your blackcoin-address manually to the right</value>
   </data>
   <data name="GettingStartedManual" xml:space="preserve">
     <value>manual</value>
@@ -215,16 +215,16 @@ Github: github.com/auspex-nl</value>
     <value>copy to clipboard</value>
   </data>
   <data name="DonateText" xml:space="preserve">
-    <value>If you find this application useful and want to donate some bitcoins to support development, please send any amount you want to the following bitcoin address:</value>
+    <value>If you find this application useful and want to donate some blackcoins to support development, please send any amount you want to the following blackcoin address:</value>
   </data>
   <data name="GettingStartedEnterYourAddress" xml:space="preserve">
-    <value>Please enter your bitcoin address</value>
+    <value>Please enter your blackcoin address</value>
   </data>
   <data name="GettingStartedHelpQRCode" xml:space="preserve">
     <value>Where is my QR Code?</value>
   </data>
   <data name="GettingStartedQRCodePopupText" xml:space="preserve">
-    <value>Use a Bitcoin client on your pc or go to bitcoinqrcode.org to generate a valid QR Code for your bitcoin address.</value>
+    <value>Use the blackcoin wallet on your pc or go to bitcoinqrcode.org to generate a valid QR Code for your blackcoin address.</value>
   </data>
   <data name="GettingStartedSave" xml:space="preserve">
     <value>save</value>
@@ -283,5 +283,20 @@ MvvmCross plugins by ACR</value>
   </data>
   <data name="AboutApplicationTitle" xml:space="preserve">
     <value>ABOUT THIS APPLICATION</value>
+  </data>
+  <data name="BC" xml:space="preserve">
+    <value>BC</value>
+  </data>
+  <data name="PageCurrentHashrateSha256" xml:space="preserve">
+    <value>sha256 hashrate</value>
+  </data>
+  <data name="StatisticsCurrentSharesScrypt" xml:space="preserve">
+    <value>Current scrypt shares</value>
+  </data>
+  <data name="StatisticsCurrentSharesSHA256" xml:space="preserve">
+    <value>Current sha256 shares</value>
+  </data>
+  <data name="StatisticsLatestPayoutSHA256" xml:space="preserve">
+    <value>Latest sha256 payout</value>
   </data>
 </root>

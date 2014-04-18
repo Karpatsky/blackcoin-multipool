@@ -7,11 +7,15 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using BlackCoinMultipool.UI.WindowsPhone.Resources;
+using Cirrious.CrossCore;
+using Cirrious.MvvmCross.ViewModels;
 
 namespace BlackCoinMultipool.UI.WindowsPhone
 {
     public partial class App : Application
     {
+        private bool _hasDoneFirstNavigation = false;
+
         /// <summary>
         /// Provides easy access to the root frame of the Phone Application.
         /// </summary>
@@ -55,12 +59,25 @@ namespace BlackCoinMultipool.UI.WindowsPhone
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
 
+            var setup = new Setup(RootFrame);
+            setup.Initialize();
+
         }
 
         // Code to execute when the application is launching (eg, from Start)
         // This code will not execute when the application is reactivated
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
+            RootFrame.Navigating += (navigatingSender, navigatingArgs) =>
+            {
+                if (_hasDoneFirstNavigation)
+                    return;
+
+                navigatingArgs.Cancel = true;
+                _hasDoneFirstNavigation = true;
+                var appStart = Mvx.Resolve<IMvxAppStart>();
+                RootFrame.Dispatcher.BeginInvoke(() => appStart.Start());
+            };
         }
 
         // Code to execute when the application is activated (brought to foreground)

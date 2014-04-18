@@ -38,6 +38,7 @@
   <ItemGroup>
     <Compile Include="BlackCoinMultipoolApplication.cs" />
     <Compile Include="BlackCoinMultipoolAppStart.cs" />
+    <Compile Include="Model\Shift.cs" />
     <Compile Include="Model\Statistics.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\BlackCoinMultipoolService.cs" />
@@ -133,6 +134,7 @@
     <Content Include="ReferenceDLL\WinPhone\Acr.MvvmCross.Plugins.Storage.WindowsPhone.dll" />
     <Content Include="ReferenceDLL\WinPhone\Acr.MvvmCross.Plugins.UserDialogs.WindowsPhone.dll" />
     <Content Include="ReferenceDLL\WinPhone\Coding4Fun.Toolkit.Controls.dll" />
+    <Content Include="ReferenceDLL\WinPhone\U2UC.WP8.Controls.dll" />
     <Content Include="ReferenceDLL\WinPhone\zxing.wp8.0.dll" />
     <Content Include="ReferenceDLL\WinPhone\ZXingNetMobile.dll" />
   </ItemGroup>

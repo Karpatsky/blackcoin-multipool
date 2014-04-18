@@ -10,7 +10,7 @@ namespace BlackCoinMultipool.Core.Service
 {
     public class BlackCoinMultipoolService : IBlackCoinMultipoolService
     {
-        private static readonly string _baseUrl = "http://www.clevermining.com/users/";
+        private static readonly string _baseUrl = "http://blackcoinpool.com/";
 
         public async Task<Statistics> GetStatistics(string bitcoinAddress)
         {
@@ -18,7 +18,7 @@ namespace BlackCoinMultipool.Core.Service
 
             Statistics stats = await ParsePage(pageHtml);
 
-            return new Statistics() { Address = bitcoinAddress, HashRate = 900.6, AverageHashRate = 1632.5, TotalProfit = 0.00102301 };
+            return new Statistics() { Address = bitcoinAddress, HashRateScrypt = 900.6, CurrentSharesScrypt = 16325, LatestPayoutScrypt = 20.23 };
         }
 
         private async Task<string> GetPage(string bitcoinAddress)
@@ -26,7 +26,7 @@ namespace BlackCoinMultipool.Core.Service
             using (var httpClient = new HttpClient())
             {
                 httpClient.BaseAddress = new Uri(_baseUrl);
-                var result = await httpClient.GetAsync(bitcoinAddress);
+                var result = await httpClient.GetAsync(@"?miner=" + bitcoinAddress);
                 if (result.StatusCode == System.Net.HttpStatusCode.OK)
                     return await result.Content.ReadAsStringAsync();
                 else

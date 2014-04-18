@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Collections.ObjectModel;
+using BlackCoinMultipool.Core.Model;
 
 namespace BlackCoinMultipool.Core.ViewModels
 {
@@ -21,77 +23,61 @@ namespace BlackCoinMultipool.Core.ViewModels
             RefreshCommand.Execute();
         }
 
-        private string _totalProfit;
-        public string TotalProfit
+        private double _currentHashrateScrypt;
+        public double CurrentHashrateScrypt
         {
-            get { return _totalProfit; }
-            set { if (_totalProfit == value) return; _totalProfit = value; RaisePropertyChanged(() => TotalProfit); }
+            get { return _currentHashrateScrypt; }
+            set { if (_currentHashrateScrypt == value) return; _currentHashrateScrypt = value; RaisePropertyChanged(() => CurrentHashrateScrypt); }
         }
 
-        private double _hashRate;
-        public double HashRate
+        private string _address;
+        public string Address
         {
-            get { return _hashRate; }
-            set { if (_hashRate == value) return; _hashRate = value; RaisePropertyChanged(() => HashRate); }
+            get { return _address; }
+            set { if (_address == value) return; _address = value; RaisePropertyChanged(() => Address); }
         }
 
-        private string _last24Hours;
-        public string Last24Hours
+        private double _currentHashrateSha256;
+        public double CurrentHashrateSha256
         {
-            get { return _last24Hours; }
-            set { if (_last24Hours == value) return; _last24Hours = value; RaisePropertyChanged(() => Last24Hours); }
+            get { return _currentHashrateSha256; }
+            set { if (_currentHashrateSha256 == value) return; _currentHashrateSha256 = value; RaisePropertyChanged(() => CurrentHashrateSha256); }
         }
 
-        private string _joined;
-        public string Joined
+        private long _currentSharesScrypt;
+        public long CurrentSharesScrypt
         {
-            get { return _joined; }
-            set { if (_joined == value) return; _joined = value; RaisePropertyChanged(() => Joined); }
+            get { return _currentSharesScrypt; }
+            set { if (_currentSharesScrypt == value) return; _currentSharesScrypt = value; RaisePropertyChanged(() => CurrentSharesScrypt); }
         }
 
-        private string _lastPayout;
-        public string LastPayout
+        private long _currentSharesSha256;
+        public long CurrentSharesSha256
         {
-            get { return _lastPayout; }
-            set { if (_lastPayout == value) return; _lastPayout = value; RaisePropertyChanged(() => LastPayout); }
+            get { return _currentSharesSha256; }
+            set { if (_currentSharesSha256 == value) return; _currentSharesSha256 = value; RaisePropertyChanged(() => CurrentSharesSha256); }
         }
 
-        private string _miningDays;
-        public string MiningDays
+        private string _latestPayoutScrypt;
+        public string LatestPayoutScrypt
         {
-            get { return _miningDays; }
-            set { if (_miningDays == value) return; _miningDays = value; RaisePropertyChanged(() => MiningDays); }
+            get { return _latestPayoutScrypt; }
+            set { if (_latestPayoutScrypt == value) return; _latestPayoutScrypt = value; RaisePropertyChanged(() => LatestPayoutScrypt); }
         }
 
-        private string _immature;
-        public string Immature
+        private string _latestPayoutSha256;
+        public string LatestPayoutSha256
         {
-            get { return _immature; }
-            set { if (_immature == value) return; _immature = value; RaisePropertyChanged(() => Immature); }
+            get { return _latestPayoutSha256; }
+            set { if (_latestPayoutSha256 == value) return; _latestPayoutSha256 = value; RaisePropertyChanged(() => LatestPayoutSha256); }
         }
 
-        private string _unexchanged;
-        public string Unexchanged
+        private ObservableCollection<Shift> _shifts;
+        public ObservableCollection<Shift> Shifts
         {
-            get { return _unexchanged; }
-            set { if (_unexchanged == value) return; _unexchanged = value; RaisePropertyChanged(() => Unexchanged); }
+            get { return _shifts; }
+            set { if (_shifts == value) return; _shifts = value; RaisePropertyChanged(() => Shifts); }
         }
-
-        private string _readyForPayout;
-        public string ReadyForPayout
-        {
-            get { return _readyForPayout; }
-            set { if (_readyForPayout == value) return; _readyForPayout = value; RaisePropertyChanged(() => ReadyForPayout); }
-        }
-
-        private string _totalExpected;
-        public string TotalExpected
-        {
-            get { return _totalExpected; }
-            set { if (_totalExpected == value) return; _totalExpected = value; RaisePropertyChanged(() => TotalExpected); }
-        }
-
-
 
 
         private MvxCommand refreshCommand;
@@ -108,19 +94,16 @@ namespace BlackCoinMultipool.Core.ViewModels
         private async void DoRefreshCommand()
         {
             var stats = await _repository.GetStatistics(_savedSettings.BlackCoinAddress);
-            TotalProfit = string.Format("{0} {1}",stats.TotalProfit, _common.BTC);
-            Last24Hours = string.Format("{0} {1}",stats.Last24hProfit, _common.BTC);
-            var dayOrDays = stats.LastPayout == 1 ? _common.StatisticsDay : _common.StatisticsDays;
-            LastPayout = string.Format("{0} {1} {2}",stats.LastPayout, dayOrDays, _common.StatisticsAgo);
-            dayOrDays = stats.MiningDays == 1 ? _common.StatisticsDay : _common.StatisticsDays;
-            MiningDays = string.Format("{0} {1}", stats.MiningDays, dayOrDays);
-            Immature = string.Format("{0} {1}", stats.Immature, _common.BTC);
-            Unexchanged = string.Format("{0} {1}", stats.Unexchanged, _common.BTC);
-            ReadyForPayout = string.Format("{0} {1}", stats.ReadyForPayout, _common.BTC);
-            TotalExpected = string.Format("{0} {1}", stats.TotalExpected, _common.BTC);
 
-            Joined = stats.Joined.ToString();
-            HashRate = HashRate + stats.HashRate;
+            Address = stats.Address;
+            CurrentHashrateScrypt = stats.HashRateScrypt;
+            CurrentHashrateSha256 = stats.HashRateSHA256;
+            CurrentSharesScrypt = stats.CurrentSharesScrypt;
+            CurrentSharesSha256 = stats.CurrentSharesSHA256;
+            LatestPayoutScrypt = string.Format("{0} {1}", stats.LatestPayoutScrypt, _common.BC);
+            LatestPayoutSha256 = string.Format("{0} {1}", stats.LatestPayoutSHA256, _common.BC);
+            if (stats.Shifts != null)
+                Shifts = new ObservableCollection<Shift>(stats.Shifts);
         }
 
         private MvxCommand donateCommand;

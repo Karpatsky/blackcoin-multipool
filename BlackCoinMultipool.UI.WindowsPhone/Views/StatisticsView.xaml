@@ -23,10 +23,35 @@
     <Grid x:Name="LayoutRoot">
         <phone:Panorama Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}">
 
-            <!-- Last hour hashrate -->
-            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PageLastHourHashrate, Source={StaticResource LocalizedStrings}}">
+            <!-- Scrypt hashrate -->
+            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PageCurrentHashrateScrypt, Source={StaticResource LocalizedStrings}}">
                 <Grid>
-                    <controls:Gauge Value="{Binding HashRate, Mode=TwoWay}"
+                    <controls:Gauge Value="{Binding CurrentHashrateScrypt, Mode=TwoWay}"
+                            Unit="{Binding Path=LocalizedResources.kHashPerSecond, Source={StaticResource LocalizedStrings}}"
+                            Grid.Column="1"
+                            Margin="5 0 0 10"
+                            NeedleBrush="Transparent"
+                            ScaleTickBrush="Transparent"
+                            TrailBrush="{StaticResource PhoneAccentBrush}"
+                            UnitBrush="{StaticResource PhoneForegroundBrush}"
+                            ValueBrush="{StaticResource PhoneForegroundBrush}"
+                            Minimum="0"
+                            Maximum="1000"
+                            ScaleWidth="35"
+                            TickBrush="Transparent"
+                            ValueStringFormat="####.#">
+                        <controls:Gauge.ScaleBrush>
+                            <SolidColorBrush Color="Gray"
+                                     Opacity=".5" />
+                        </controls:Gauge.ScaleBrush>
+                    </controls:Gauge>
+                </Grid>
+            </phone:PanoramaItem>
+
+            <!-- Sha256 hashrate -->
+            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PageCurrentHashrateSha256, Source={StaticResource LocalizedStrings}}">
+                <Grid>
+                    <controls:Gauge Value="{Binding CurrentHashrateSha256, Mode=TwoWay}"
                             Unit="{Binding Path=LocalizedResources.kHashPerSecond, Source={StaticResource LocalizedStrings}}"
                             Grid.Column="1"
                             Margin="5 0 0 10"
@@ -66,62 +91,65 @@
                     </Grid.RowDefinitions>
                     
                     <!-- Total Profits -->
-                    <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.StatisticsTotalProfits, Source={StaticResource LocalizedStrings}}" />
-                    <TextBlock Grid.Row="0" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding TotalProfit}" />
+                    <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.StatisticsLatestPayoutScrypt, Source={StaticResource LocalizedStrings}}" />
+                    <TextBlock Grid.Row="0" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding LatestPayoutScrypt}" />
 
                     <!-- Last 24h Profits -->
-                    <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.StatisticsLast24hProfits, Source={StaticResource LocalizedStrings}}" />
-                    <TextBlock Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding Last24Hours}" />
+                    <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.StatisticsLatestPayoutSHA256, Source={StaticResource LocalizedStrings}}" />
+                    <TextBlock Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding LatestPayoutSha256}" />
 
                     <!-- Mining Days -->
-                    <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.StatisticsMiningDays, Source={StaticResource LocalizedStrings}}" />
-                    <TextBlock Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding MiningDays}" />
+                    <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.StatisticsCurrentSharesScrypt, Source={StaticResource LocalizedStrings}}" />
+                    <TextBlock Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding CurrentSharesScrypt}" />
 
                     <!-- Last Payout -->
-                    <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.StatisticsLastPayout, Source={StaticResource LocalizedStrings}}" />
-                    <TextBlock Grid.Row="3" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding LastPayout}" />
+                    <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.StatisticsCurrentSharesSHA256, Source={StaticResource LocalizedStrings}}" />
+                    <TextBlock Grid.Row="3" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding CurrentSharesSha256}" />
 
-                    <!-- Joined -->
+                    <!-- Joined --><!--
                     <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.StatisticsDateJoined, Source={StaticResource LocalizedStrings}}" />
-                    <TextBlock Grid.Row="4" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding Joined}" />
+                    <TextBlock Grid.Row="4" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding Joined}" />-->
 
 
                 </Grid>
             </phone:PanoramaItem>
 
             <!-- Balances -->
-            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PageBalances, Source={StaticResource LocalizedStrings}}">
+            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PageShifts, Source={StaticResource LocalizedStrings}}">
                 <Grid Margin="10,0">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.2*"/>
+                        <!--<ColumnDefinition Width="1.2*"/>-->
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
+                        <!--<RowDefinition Height="37"/>
                         <RowDefinition Height="37"/>
                         <RowDefinition Height="37"/>
                         <RowDefinition Height="37"/>
                         <RowDefinition Height="37"/>
-                        <RowDefinition Height="37"/>
-                        <RowDefinition Height="37"/>
+                        <RowDefinition Height="37"/>-->
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
+                    <phone:LongListSelector Margin="10" ItemsSource="{Binding Shifts}"/>
 
-                    <!-- Immature -->
+                    <!-- Immature --><!--
                     <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.BalancesImmature, Source={StaticResource LocalizedStrings}}" />
                     <TextBlock Grid.Row="0" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding Immature}" />
 
-                    <!-- Unexchanged -->
+                    --><!-- Unexchanged --><!--
                     <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.BalancesUnexchanged, Source={StaticResource LocalizedStrings}}" />
                     <TextBlock Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding Unexchanged}" />
 
-                    <!-- Ready for payout -->
+                    --><!-- Ready for payout --><!--
                     <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.BalancesReadyForPayout, Source={StaticResource LocalizedStrings}}" />
                     <TextBlock Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding ReadyForPayout}" />
 
-                    <!-- Total Expected -->
+                    --><!-- Total Expected --><!--
                     <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource TextBlockStatistics}" Text="{Binding Path=LocalizedResources.BalancesTotalExpected, Source={StaticResource LocalizedStrings}}" />
-                    <TextBlock Grid.Row="3" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding TotalExpected}" />
+                    <TextBlock Grid.Row="3" Grid.Column="1" Style="{StaticResource TextBlockStatistics}" Text="{Binding TotalExpected}" />-->
 
+                    
+                    
                 </Grid>
             </phone:PanoramaItem>
         </phone:Panorama>

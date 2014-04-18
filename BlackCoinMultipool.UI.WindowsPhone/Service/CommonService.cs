@@ -89,6 +89,14 @@ namespace BlackCoinMultipool.UI.WindowsPhone.Service
             }
         }
 
+        public string BC
+        {
+            get
+            {
+                return AppResources.ResourceManager.GetString("BC", AppResources.Culture);
+            }
+        }
+
         public string StatisticsAgo
         {
             get

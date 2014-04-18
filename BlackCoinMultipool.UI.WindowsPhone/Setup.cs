@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlackCoinMultipool.WindowsPhone
+namespace BlackCoinMultipool.UI.WindowsPhone
 {
     public class Setup : MvxPhoneSetup
     {

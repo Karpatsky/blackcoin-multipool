@@ -9,21 +9,15 @@ namespace BlackCoinMultipool.Core.Model
     {
         public string Address { get; set; }
 
-        public double HashRate { get; set; }
-        public double AverageHashRate { get; set; }
+        public double HashRateScrypt { get; set; }
+        public double HashRateSHA256 { get; set; }
 
+        public long CurrentSharesScrypt { get; set; }
+        public long CurrentSharesSHA256 { get; set; }
 
+        public double LatestPayoutScrypt { get; set; }
+        public double LatestPayoutSHA256 { get; set; }
 
-        public double TotalProfit { get; set; }
-        public double Last24hProfit { get; set; }
-        public int MiningDays { get; set; }
-        public int LastPayout { get; set; }
-        public DateTimeOffset Joined { get; set; }
-
-        public double Immature { get; set; }
-        public double Unexchanged { get; set; }
-        public double ReadyForPayout { get; set; }
-        public double TotalExpected { get; set; }
-
+        public List<Shift> Shifts { get; set; }
     }
 }

@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 
 namespace BlackCoinMultipool.Core.Service
 {
+
+    /// <summary>
+    /// Screenscraping implementation, as there is no api as of yet.
+    /// </summary>
     public class BlackCoinMultipoolService : IBlackCoinMultipoolService
     {
         private static readonly string _baseUrl = "http://blackcoinpool.com/";

@@ -13,37 +13,69 @@ namespace BlackCoinMultipool.Core.ViewModels
     {
         private ICommonService _service;
 
-        private string _donationAddress;
-        public string DonationAddress
-        {
-            get { return _donationAddress; }
-            set { if (_donationAddress == value) return; _donationAddress = value; RaisePropertyChanged(() => DonationAddress); }
-        }
-
-
         public DonationViewModel()
         {
             _service = Mvx.Resolve<ICommonService>();
-            DonationAddress = _service.DonationAddress;
+            DonationAddressBlackcoin = _service.DonationAddressBlackcoin;
+            DonationAddressBitcoin = _service.DonationAddressBitcoin;
         }
 
-        private MvxCommand copyToClipboardCommand;
+        #region Blackcoin
 
-        public MvxCommand CopyToClipboardCommand
+        private string _donationAddressBlackcoin;
+        public string DonationAddressBlackcoin
+        {
+            get { return _donationAddressBlackcoin; }
+            set { if (_donationAddressBlackcoin == value) return; _donationAddressBlackcoin = value; RaisePropertyChanged(() => DonationAddressBlackcoin); }
+        }
+
+        private MvxCommand copyToClipboardBlackcoinCommand;
+
+        public MvxCommand CopyToClipboardBlackcoinCommand
         {
             get
             {
-                copyToClipboardCommand = copyToClipboardCommand ?? new MvxCommand(DoCopyToClipboardCommand);
-                return copyToClipboardCommand;
+                copyToClipboardBlackcoinCommand = copyToClipboardBlackcoinCommand ?? new MvxCommand(DoCopyToClipboardBlackcoinCommand);
+                return copyToClipboardBlackcoinCommand;
             }
         }
 
-        private void DoCopyToClipboardCommand()
+        private void DoCopyToClipboardBlackcoinCommand()
         {
             var service = Mvx.Resolve<IClipboardService>();
-            service.CopyToClipboard(DonationAddress);
+            service.CopyToClipboard(DonationAddressBlackcoin);
         }
 
-        
+        #endregion
+
+        #region Bitcoin
+
+        private string _donationAddressBitcoin;
+        public string DonationAddressBitcoin
+        {
+            get { return _donationAddressBitcoin; }
+            set { if (_donationAddressBitcoin == value) return; _donationAddressBitcoin = value; RaisePropertyChanged(() => DonationAddressBitcoin); }
+        }
+
+        private MvxCommand copyToClipboardBitcoinCommand;
+
+        public MvxCommand CopyToClipboardBitcoinCommand
+        {
+            get
+            {
+                copyToClipboardBitcoinCommand = copyToClipboardBitcoinCommand ?? new MvxCommand(DoCopyToClipboardBitcoinCommand);
+                return copyToClipboardBitcoinCommand;
+            }
+        }
+
+        private void DoCopyToClipboardBitcoinCommand()
+        {
+            var service = Mvx.Resolve<IClipboardService>();
+            service.CopyToClipboard(DonationAddressBitcoin);
+        }
+
+        #endregion
+
+
     }
 }

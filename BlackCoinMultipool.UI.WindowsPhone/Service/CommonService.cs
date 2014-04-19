@@ -10,10 +10,14 @@ namespace BlackCoinMultipool.UI.WindowsPhone.Service
 {
     public class CommonService : ICommonService
     {
-        public string DonationAddress
+        public string DonationAddressBlackcoin
         {
             get { return "BM4mL6tSo9EphkrnNBppzhjg5GsCXa9C2e"; }
-        }    
+        }
+        public string DonationAddressBitcoin
+        {
+            get { return "13uua9VoFYPaRCXyuyepwpMQ1nu7JsAAT6"; }
+        }   
 
         public string PopupOk
         {

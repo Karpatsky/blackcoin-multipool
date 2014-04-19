@@ -100,7 +100,8 @@ namespace BlackCoinMultipool.UI.WindowsPhone.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to MvvmCross 
-        ///MvvmCross plugins by ACR.
+        ///MvvmCross plugins by ACR
+        ///U2UC Windows Phone 8 Gauge Control.
         /// </summary>
         public static string AboutLibrariesText {
             get {
@@ -190,11 +191,20 @@ namespace BlackCoinMultipool.UI.WindowsPhone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to If you find this application useful and want to donate some bitcoins to support development, please send any amount you want to the following bitcoin address:.
+        /// </summary>
+        public static string DonateTextBitcoin {
+            get {
+                return ResourceManager.GetString("DonateTextBitcoin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to If you find this application useful and want to donate some blackcoins to support development, please send any amount you want to the following blackcoin address:.
         /// </summary>
-        public static string DonateText {
+        public static string DonateTextBlackcoin {
             get {
-                return ResourceManager.GetString("DonateText", resourceCulture);
+                return ResourceManager.GetString("DonateTextBlackcoin", resourceCulture);
             }
         }
         
@@ -379,6 +389,24 @@ namespace BlackCoinMultipool.UI.WindowsPhone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to bitcoin.
+        /// </summary>
+        public static string PageDonateBitcoin {
+            get {
+                return ResourceManager.GetString("PageDonateBitcoin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to blackcoin.
+        /// </summary>
+        public static string PageDonateBlackcoin {
+            get {
+                return ResourceManager.GetString("PageDonateBlackcoin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to WELCOME.
         /// </summary>
         public static string PageGettingStarted {
@@ -492,6 +520,33 @@ namespace BlackCoinMultipool.UI.WindowsPhone.Resources {
         public static string SettingsCurrentlySetAddress {
             get {
                 return ResourceManager.GetString("SettingsCurrentlySetAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BC/MH.
+        /// </summary>
+        public static string ShiftsBCMHs {
+            get {
+                return ResourceManager.GetString("ShiftsBCMHs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to payout.
+        /// </summary>
+        public static string ShiftsPayout {
+            get {
+                return ResourceManager.GetString("ShiftsPayout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to timestamp.
+        /// </summary>
+        public static string ShiftsTimestamp {
+            get {
+                return ResourceManager.GetString("ShiftsTimestamp", resourceCulture);
             }
         }
         

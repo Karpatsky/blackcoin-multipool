@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{19590b8c-12af-493b-93ed-ae13718e2c14}" Title="Blackcoin Pool" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Rick Jansen" Description="Blackcoin pool mining stats" Publisher="" PublisherID="{0f14ab20-fcc7-4774-8971-2da683384483}">
+  <App xmlns="" ProductID="{19590b8c-12af-493b-93ed-ae13718e2c14}" Title="Blackcoin Pool" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Rick Jansen" Description="Blackcoin pool mining stats" Publisher="Auspex.nl" PublisherID="{0f14ab20-fcc7-4774-8971-2da683384483}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -20,7 +20,7 @@
           <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
           <Count>0</Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>BlackCoinMultipool.UI.WindowsPhone</Title>
+          <Title>Blackcoin Pool</Title>
           <BackContent>
           </BackContent>
           <BackBackgroundImageURI>

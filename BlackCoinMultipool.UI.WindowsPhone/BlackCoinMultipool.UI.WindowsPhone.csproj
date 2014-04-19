@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="BlackCoinMultipool.UI.WindowsPhone_2014_04_19_21_45_01.sap" />
     <None Include="packages.config" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml">
@@ -142,8 +143,8 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\blackcoinlogo.png" />
     <Content Include="Assets\donate_qrcode.png" />
+    <Content Include="Assets\donate_qrcode_bitcoin.png" />
     <Content Include="Assets\Icons\appbar.donate.png" />
     <Content Include="Assets\Icons\appbar.refresh.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
@@ -278,7 +279,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Resources\AppResources.nl.resx" />
     <EmbeddedResource Include="Resources\AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>

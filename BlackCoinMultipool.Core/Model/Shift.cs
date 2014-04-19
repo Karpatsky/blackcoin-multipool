@@ -8,7 +8,7 @@ namespace BlackCoinMultipool.Core.Model
 {
     public class Shift
     {
-        public DateTimeOffset Timestamp { get; set; }
+        public string Timestamp { get; set; }
 
         public long Shares { get; set; }
         public long TotalShares { get; set; }

@@ -8,7 +8,9 @@ namespace BlackCoinMultipool.Core.Service
 {
     public interface ICommonService
     {
-        string DonationAddress { get; }
+        string DonationAddressBlackcoin { get; }
+        string DonationAddressBitcoin { get; }
+
 
         // translation strings that are required in the Core
         string PopupOk { get; }

@@ -214,7 +214,7 @@ Github: github.com/auspex-nl</value>
   <data name="DonateCopyToClipboard" xml:space="preserve">
     <value>copy to clipboard</value>
   </data>
-  <data name="DonateText" xml:space="preserve">
+  <data name="DonateTextBlackcoin" xml:space="preserve">
     <value>If you find this application useful and want to donate some blackcoins to support development, please send any amount you want to the following blackcoin address:</value>
   </data>
   <data name="GettingStartedEnterYourAddress" xml:space="preserve">
@@ -273,7 +273,8 @@ Github: github.com/auspex-nl</value>
   </data>
   <data name="AboutLibrariesText" xml:space="preserve">
     <value>MvvmCross 
-MvvmCross plugins by ACR</value>
+MvvmCross plugins by ACR
+U2UC Windows Phone 8 Gauge Control</value>
   </data>
   <data name="AboutLibrariesTitle" xml:space="preserve">
     <value>3RD PARTY LIBRARIES</value>
@@ -298,5 +299,23 @@ MvvmCross plugins by ACR</value>
   </data>
   <data name="StatisticsLatestPayoutSHA256" xml:space="preserve">
     <value>Latest sha256 payout</value>
+  </data>
+  <data name="DonateTextBitcoin" xml:space="preserve">
+    <value>If you find this application useful and want to donate some bitcoins to support development, please send any amount you want to the following bitcoin address:</value>
+  </data>
+  <data name="PageDonateBitcoin" xml:space="preserve">
+    <value>bitcoin</value>
+  </data>
+  <data name="PageDonateBlackcoin" xml:space="preserve">
+    <value>blackcoin</value>
+  </data>
+  <data name="ShiftsBCMHs" xml:space="preserve">
+    <value>BC/MH</value>
+  </data>
+  <data name="ShiftsPayout" xml:space="preserve">
+    <value>payout</value>
+  </data>
+  <data name="ShiftsTimestamp" xml:space="preserve">
+    <value>timestamp</value>
   </data>
 </root>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res/BlackCoinMultipool.UI.Android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="@string/SettingsCurrentlySetAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/textView_settings_currentlysetaddress" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_settings_address"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        local:MvxBind="Text BitcoinAddress"
+        android:textStyle="bold" />
+    <Button
+        android:text="@string/SettingsChangeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_settings_clear"
+        android:layout_margin="20dp"
+        local:MvxBind="Click ClearAddressCommand" />
+</LinearLayout>

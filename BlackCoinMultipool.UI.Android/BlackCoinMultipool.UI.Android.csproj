@@ -15,8 +15,14 @@
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidUseLatestPlatformSdk />
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize />
+    <JavaOptions />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,33 +46,367 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Acr.MvvmCross">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Acr.MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.MvvmCross.Plugins.BarCodeScanner">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Acr.MvvmCross.Plugins.BarCodeScanner.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.MvvmCross.Plugins.BarCodeScanner.Droid">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Android\Acr.MvvmCross.Plugins.BarCodeScanner.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.MvvmCross.Plugins.Settings">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Acr.MvvmCross.Plugins.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.MvvmCross.Plugins.Settings.Droid">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Android\Acr.MvvmCross.Plugins.Settings.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.MvvmCross.Plugins.Storage">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Acr.MvvmCross.Plugins.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.MvvmCross.Plugins.Storage.Droid">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Android\Acr.MvvmCross.Plugins.Storage.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.MvvmCross.Plugins.UserDialogs">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Acr.MvvmCross.Plugins.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.MvvmCross.Plugins.UserDialogs.Droid">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Android\Acr.MvvmCross.Plugins.UserDialogs.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="AndHUD">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Android\AndHUD.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Droid.Fragging">
+      <HintPath>..\packages\MvvmCross.HotTuna.Droid.Fragging.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Droid.Fragging.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Droid.FullFragging">
+      <HintPath>..\packages\MvvmCross.HotTuna.Droid.FullFragging.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Droid.FullFragging.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Json">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Json.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Messenger.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="DK.Ostebaronen.Droid.ViewPagerIndicator">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Android\DK.Ostebaronen.Droid.ViewPagerIndicator.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Json.3.1.1\lib\MonoAndroid\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MvvmCross.PortableSupport.3.1.1\lib\MonoAndroid\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.20\lib\portable-net45+win8\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.20\lib\portable-net45+win8\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MvvmCross.PortableSupport.3.1.1\lib\MonoAndroid\System.Windows.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MvvmCross.PortableSupport.3.1.1\lib\MonoAndroid\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Components\xamandroidsupportv4-18-4.19.1.0\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.monoandroid">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Android\zxing.monoandroid.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile">
+      <HintPath>..\BlackCoinMultipool.Core\ReferenceDLL\Android\ZXing.Net.Mobile.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\GettingStartedTabsAdapter.cs" />
+    <Compile Include="Bootstrap\BarCodeScannerPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\SettingsPluginBootstrapper.cs" />
+    <Compile Include="Bootstrap\UserDialogsPluginBootstrap.cs" />
+    <Compile Include="DebugTrace.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\ClipboardService.cs" />
+    <Compile Include="Service\CommonService.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="SplashScreen.cs" />
+    <Compile Include="Views\AboutView.cs" />
+    <Compile Include="Views\DonationView.cs" />
+    <Compile Include="Views\Fragments\GettingStartedAutomaticFragment.cs" />
+    <Compile Include="Views\Fragments\GettingStartedManualFragment.cs" />
+    <Compile Include="Views\Fragments\StatisticsBalancesFragment.cs" />
+    <Compile Include="Views\Fragments\StatisticsHashrateFragment.cs" />
+    <Compile Include="Views\Fragments\StatisticsStatisticsFragment.cs" />
+    <Compile Include="Views\GettingStartedView.cs" />
+    <Compile Include="Views\SettingsView.cs" />
+    <Compile Include="Views\StatisticsView.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Layout\Main.axml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\Values\Strings.xml" />
+    <AndroidResource Include="Resources\Values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\Values\SplashStyle.xml" />
+    <AndroidResource Include="Resources\Values\MvxBindingAttributes.xml" />
+    <AndroidResource Include="Resources\Drawable\splash.png" />
+    <AndroidResource Include="Resources\Drawable\donate_qrcode.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\ic_action_donate.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\splash.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\ic_action_donate.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\icon.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\splash.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\ic_action_donate.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\splash.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\ic_action_donate.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\Drawable\blackcointheme_btn_default_holo_dark.axml" />
+    <AndroidResource Include="Resources\Drawable\blackcointheme_tab_indicator_holo.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\blackcointheme_edit_text_holo_dark.axml" />
+    <AndroidResource Include="Resources\Drawable\blackcointheme_progress_horizontal_holo_dark.axml" />
+    <AndroidResource Include="Resources\Drawable\blackcointheme_progress_indeterminate_horizontal_holo_dark.axml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_btn_default_disabled_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_btn_default_disabled_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_btn_default_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_btn_default_normal_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_btn_default_pressed_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_progress_bg_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_progress_primary_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_progress_secondary_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_progressbar_indeterminate_holo1.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_progressbar_indeterminate_holo2.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_progressbar_indeterminate_holo3.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_progressbar_indeterminate_holo4.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_progressbar_indeterminate_holo5.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_progressbar_indeterminate_holo6.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_progressbar_indeterminate_holo7.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_progressbar_indeterminate_holo8.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_tab_selected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_tab_selected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_tab_selected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_tab_unselected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_tab_unselected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_tab_unselected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_textfield_activated_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_textfield_default_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_textfield_disabled_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_textfield_disabled_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_textfield_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_btn_default_disabled_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_btn_default_disabled_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_btn_default_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_btn_default_normal_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_btn_default_pressed_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_progress_bg_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_progress_primary_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_progress_secondary_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_progressbar_indeterminate_holo1.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_progressbar_indeterminate_holo2.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_progressbar_indeterminate_holo3.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_progressbar_indeterminate_holo4.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_progressbar_indeterminate_holo5.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_progressbar_indeterminate_holo6.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_progressbar_indeterminate_holo7.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_progressbar_indeterminate_holo8.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_tab_selected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_tab_selected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_tab_selected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_tab_unselected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_tab_unselected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_tab_unselected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_textfield_activated_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_textfield_default_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_textfield_disabled_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_textfield_disabled_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_textfield_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_btn_default_disabled_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_btn_default_disabled_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_btn_default_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_btn_default_normal_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_btn_default_pressed_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_progress_bg_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_progress_primary_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_progress_secondary_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_progressbar_indeterminate_holo1.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_progressbar_indeterminate_holo2.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_progressbar_indeterminate_holo3.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_progressbar_indeterminate_holo4.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_progressbar_indeterminate_holo5.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_progressbar_indeterminate_holo6.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_progressbar_indeterminate_holo7.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_progressbar_indeterminate_holo8.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_tab_selected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_tab_selected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_tab_selected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_tab_unselected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_tab_unselected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_tab_unselected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_textfield_activated_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_textfield_default_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_textfield_disabled_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_textfield_disabled_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_textfield_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_btn_default_disabled_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_btn_default_disabled_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_btn_default_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_btn_default_normal_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_btn_default_pressed_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_progress_bg_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_progress_primary_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_progress_secondary_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_progressbar_indeterminate_holo1.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_progressbar_indeterminate_holo2.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_progressbar_indeterminate_holo3.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_progressbar_indeterminate_holo4.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_progressbar_indeterminate_holo5.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_progressbar_indeterminate_holo6.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_progressbar_indeterminate_holo7.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_progressbar_indeterminate_holo8.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_tab_selected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_tab_selected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_tab_selected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_tab_unselected_focused_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_tab_unselected_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_tab_unselected_pressed_holo.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_textfield_activated_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_textfield_default_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_textfield_disabled_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_textfield_disabled_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_textfield_focused_holo_dark.9.png" />
+    <AndroidResource Include="Resources\Layout\blackcointheme_tab_indicator_holo.axml" />
+    <AndroidResource Include="Resources\Values\colors_blackcointheme.xml" />
+    <AndroidResource Include="Resources\Values\dimens_blackcointheme.xml" />
+    <AndroidResource Include="Resources\Values\styles_blackcointheme.xml" />
+    <AndroidResource Include="Resources\Values\themes_blackcointheme.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_ab_bottom_solid.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_ab_solid.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_ab_stacked_solid.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_ab_texture_tile.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_ab_transparent.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_btn_cab_done_default.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_btn_cab_done_focused.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_btn_cab_done_pressed.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_cab_background_bottom.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_cab_background_top.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_ab_bottom_solid.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_ab_solid.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_ab_stacked_solid.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_ab_texture_tile.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_ab_transparent.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_btn_cab_done_default.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_btn_cab_done_focused.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_btn_cab_done_pressed.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_cab_background_bottom.9.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_cab_background_top.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_ab_bottom_solid.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_ab_solid.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_ab_stacked_solid.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_ab_texture_tile.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_ab_transparent.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_btn_cab_done_default.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_btn_cab_done_focused.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_btn_cab_done_pressed.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_cab_background_bottom.9.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_cab_background_top.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_ab_bottom_solid.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_ab_solid.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_ab_stacked_solid.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_ab_texture_tile.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_ab_transparent.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_btn_cab_done_default.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_btn_cab_done_focused.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_btn_cab_done_pressed.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_cab_background_bottom.9.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_cab_background_top.9.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <AndroidResource Include="Resources\Layout\GettingStartedAutomaticFragment.axml" />
+    <AndroidResource Include="Resources\Layout\GettingStartedManualFragment.axml" />
+    <AndroidResource Include="Resources\Layout\StatisticsBalancesFragment.axml" />
+    <AndroidResource Include="Resources\Layout\StatisticsHashrateFragment.axml" />
+    <AndroidResource Include="Resources\Layout\StatisticsStatisticsFragment.axml" />
+    <AndroidResource Include="Resources\Layout-port\AboutView.axml" />
+    <AndroidResource Include="Resources\Layout-port\DonationView.axml" />
+    <AndroidResource Include="Resources\Layout-port\GettingStartedView.axml" />
+    <AndroidResource Include="Resources\Layout-port\SettingsView.axml" />
+    <AndroidResource Include="Resources\Layout-port\SplashScreen.axml" />
+    <AndroidResource Include="Resources\Layout-port\StatisticsView.axml" />
+    <AndroidResource Include="Resources\Menu\statistics_activity_actions.axml" />
+    <AndroidResource Include="Resources\Drawable\blackcointheme_ab_background_textured.axml" />
+    <AndroidResource Include="Resources\Drawable\blackcointheme_btn_cab_done.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlackCoinMultipool.Core\BlackCoinMultipool.Core.csproj">
+      <Project>{e4eb6c95-cf32-42e1-9c6c-2d7b7d978fa0}</Project>
+      <Name>BlackCoinMultipool.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportv4-18">
+      <Visible>False</Visible>
+      <Version>4.19.1.0</Version>
+    </XamarinComponentReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

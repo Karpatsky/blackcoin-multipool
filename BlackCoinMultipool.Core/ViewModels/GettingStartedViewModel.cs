@@ -52,17 +52,18 @@ namespace BlackCoinMultipool.Core.ViewModels
 
             var result = ExtractBitcoinAddress(r);
 
-            await System.Threading.Tasks.Task.Delay(100);
+            //await System.Threading.Tasks.Task.Delay(100);
 
-            var promptResult = await _dialogService.ConfirmAsync(string.Format("{0}\n{1}\n\n{2}", _commonService.PopupFoundAddress, result, _commonService.PopupIsThisCorrect), okText: _commonService.PopupYes, cancelText: _commonService.PopupNo);
+            //var promptResult = await _dialogService.ConfirmAsync(string.Format("{0}\n{1}\n\n{2}", _commonService.PopupFoundAddress, result, _commonService.PopupIsThisCorrect), okText: _commonService.PopupYes, cancelText: _commonService.PopupNo);
 
-            if (promptResult)
-            {
+            //if (promptResult)
+            //{
 
                 _settingsService.BlackCoinAddress = result;
 
+            if (!string.IsNullOrEmpty(result))
                 ShowViewModel<StatisticsViewModel>();
-            }
+            //}
         }
 
         private MvxCommand saveAddressCommand;

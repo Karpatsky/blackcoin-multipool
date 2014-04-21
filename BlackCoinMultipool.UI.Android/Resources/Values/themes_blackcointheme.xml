@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="BlackcoinTheme" parent="android:Theme.Holo">
+
+    <item name="android:editTextBackground">@drawable/blackcointheme_edit_text_holo_dark</item>
+
+    <item name="android:buttonStyle">@style/ButtonBlackcoinTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonBlackcoinTheme</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarBlackcoinTheme</item>
+
+    <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+
+    <item name="android:actionBarStyle">@style/ActionBar.Solid.BlackcoinTheme</item>
+    <item name="android:actionModeBackground">@drawable/blackcointheme_cab_background_top</item>
+    <item name="android:actionModeSplitBackground">@drawable/blackcointheme_cab_background_bottom</item>
+    <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.BlackcoinTheme</item>
+
+  </style>
+
+  <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+    <item name="android:background">@drawable/blackcointheme_tab_indicator_holo</item>
+  </style>
+
+  <style name="ActionBar.Solid.BlackcoinTheme" parent="@android:style/Widget.Holo.ActionBar.Solid">
+    <item name="android:background">@drawable/blackcointheme_ab_solid</item>
+    <item name="android:backgroundStacked">@drawable/blackcointheme_ab_stacked_solid</item>
+    <item name="android:backgroundSplit">@drawable/blackcointheme_ab_bottom_solid</item>
+    <item name="android:progressBarStyle">@style/ProgressBarBlackcoinTheme</item>
+  </style>
+  
+
+  <style name="ActionButton.CloseMode.BlackcoinTheme" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+    <item name="android:background">@drawable/blackcointheme_btn_cab_done</item>
+  </style>
+</resources>

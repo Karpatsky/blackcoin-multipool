@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  <!-- Refresh, should appear as action button -->
+  <item android:id="@+id/action_statistics_refresh"
+      android:icon="@drawable/ic_action_refresh"
+      android:title="@string/MenuRefresh"
+      android:showAsAction="ifRoom" />
+  <!-- Donate, should appear as action button -->
+  <item android:id="@+id/action_statistics_donate"
+        android:icon="@drawable/ic_action_donate"
+        android:title="@string/MenuDonate"
+        android:showAsAction="ifRoom" />
+  <!-- Settings, should always be in the overflow -->
+  <item android:id="@+id/action_statistics_settings"
+        android:title="@string/MenuSettings"
+        android:showAsAction="never" />
+  <!-- About, should always be in the overflow -->
+  <item android:id="@+id/action_statistics_about"
+        android:title="@string/MenuAbout"
+        android:showAsAction="never" />
+</menu>

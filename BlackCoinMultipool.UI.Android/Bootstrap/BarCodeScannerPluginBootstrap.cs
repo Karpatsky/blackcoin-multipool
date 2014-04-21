@@ -1,0 +1,10 @@
+﻿using Cirrious.CrossCore.Plugins;
+
+namespace BlackCoinMultipool.UI.Android.Bootstrap
+{
+    public class BarCodeScannerPluginBootstrap
+        : MvxPluginBootstrapAction<Acr.MvvmCross.Plugins.BarCodeScanner.PluginLoader>
+    {
+
+    }
+}

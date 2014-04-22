@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">BlackCoinMultipool.UI.Android</string>
     <string name="PageStatsCurrentHashrateScrypt">hashrate scrypt</string>
     <string name="PageStatsCurrentHashrateSha256">hashrate sha256</string>
     <string name="PageStatsStats">statistics</string>
     <string name="PageStatsShifts">shifts</string>
   <string name="AboutApplicationTitle">About this application</string>
-  <string name="AboutApplicationText">This application is in no way affiliated with Clevermining. The source of this application is released under the Microsoft Public License (MS-PL) and is available on github.com/auspex-nl.</string>
+  <string name="AboutApplicationText">This application is in no way affiliated with BlackCoin. The source of this application is released under the Microsoft Public License (MS-PL) and is available on github.com/auspex-nl.</string>
   <string name="AboutDeveloperText">Rick Jansen\nWebsite: auspex.nl\nGithub: github.com/auspex-nl</string>
   <string name="AboutDeveloperTitle">The developer</string>
   <string name="AboutLibrariesText">MvvmCross\nMvvmCross plugins by ACR</string>
   <string name="AboutLibrariesTitle">3rd party libraries</string>
-  <string name="ApplicationName">Clevermining</string>
-  <string name="ApplicationTitle">CleverMining</string>
+  <string name="ApplicationName">Blackcoin Pool</string>
+  <string name="ApplicationTitle">Blackcoin Pool</string>
   <string name="BalancesImmature">Immature</string>
   <string name="BalancesReadyForPayout">Ready for payout</string>
   <string name="BalancesTotalExpected">Total expected</string>
@@ -21,15 +20,18 @@
   <string name="BTC">BTC</string>
   <string name="BC">BC</string>
   <string name="DonateCopyToClipboard">Copy to clipboard</string>
-  <string name="DonateText">If you find this application useful and want to donate some bitcoins to support development, please send any amount you want to the following bitcoin address:</string>
+  <string name="DonateTextBitcoin">If you find this application useful and want to donate some bitcoins to support development, please send any amount you want to the following bitcoin address:</string>
+  <string name="DonateTextBlackcoin">If you find this application useful and want to donate some blackcoins to support development, please send any amount you want to the following blackcoin address:</string>
+  <string name="DonateTabBlackcoin">Blackcoin</string>
+  <string name="DonateTabBitcoin">Bitcoin</string>
   <string name="GettingStartedAutomatic">Automatic</string>
-  <string name="GettingStartedEnterYourAddress">Please enter your bitcoin address</string>
-  <string name="GettingStartedExplanation">Click the button below to scan your Bitcoin-address\'s QR code. You can also enter your Bitcoin-address manually to the right</string>
+  <string name="GettingStartedEnterYourAddress">Please enter your blackcoin address</string>
+  <string name="GettingStartedExplanation">Click the button below to scan your blackcoin-address\'s QR code. You can also enter your blackcoin-address manually to the right</string>
   <string name="GettingStartedHelpQRCode">
     <u>Where is my QR Code?</u>
   </string>
   <string name="GettingStartedManual">Manual</string>
-  <string name="GettingStartedQRCodePopupText">Use a Bitcoin client on your pc or go to bitcoinqrcode.org to generate a valid QR Code for your bitcoin address.</string>
+  <string name="GettingStartedQRCodePopupText">Use a blackcoin wallet on your pc or go to bitcoinqrcode.org to generate a valid QR Code for your blackcoin address.</string>
   <string name="GettingStartedSave">Save</string>
   <string name="GettingStartedScanQR">Scan QR code</string>
   <string name="GHashPerSecond">GHash/s</string>
@@ -41,7 +43,7 @@
   <string name="MenuSettings">Settings</string>
   <string name="MHashPerSecond">MHash/s</string>
   <string name="PageAbout">About</string>
-  <string name="PageBalances">Balances</string>
+  <string name="PageShifts">Shifts</string>
   <string name="PageDonate">Donate</string>
   <string name="PageGettingStarted">Welcome</string>
   <string name="PageLastHourHashrate">Last Hour Hashrate</string>

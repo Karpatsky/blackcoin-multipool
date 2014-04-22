@@ -11,17 +11,17 @@ using Android.Views;
 using Android.Widget;
 using Cirrious.MvvmCross.Droid.Fragging.Fragments;
 using Cirrious.MvvmCross.Binding.Droid.BindingContext;
-using Cirrious.MvvmCross.Binding.Droid.Views;
+
 
 namespace BlackCoinMultipool.UI.Android.Views.Fragments
 {
-    class StatisticsBalancesFragment : MvxFragment
+    public class DonateBitcoinFragment : MvxFragment
     {
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container,
-                                  Bundle savedInstanceState)
+                          Bundle savedInstanceState)
         {
             var ignored = base.OnCreateView(inflater, container, savedInstanceState);
-            return this.BindingInflate(Resource.Layout.StatisticsBalancesFragment, null);
+            return this.BindingInflate(Resource.Layout.DonateBitcoinFragment, null);
         }
     }
 }

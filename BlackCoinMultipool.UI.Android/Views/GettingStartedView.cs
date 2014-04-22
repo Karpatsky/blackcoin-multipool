@@ -30,7 +30,7 @@ namespace BlackCoinMultipool.UI.Android.Views
     {
         private ViewPager _viewPager;
         private TabPageIndicator _pageIndicator;
-        private GettingStartedTabsAdapter _tabAdapter;
+        private FragmentTabsAdapter _tabAdapter;
         private LinearLayout _layoutBase;
 
         public GettingStartedViewModel GettingStartedViewModel
@@ -49,19 +49,19 @@ namespace BlackCoinMultipool.UI.Android.Views
             ActionBar.SetDisplayHomeAsUpEnabled(true);  // < icon erbij
             ActionBar.Show();
 
-            _viewPager = FindViewById<ViewPager>(Resource.Id.pager);
-            _pageIndicator = FindViewById<TabPageIndicator>(Resource.Id.indicator);
+            _viewPager = FindViewById<ViewPager>(Resource.Id.page_gettingstarted_pager);
+            _pageIndicator = FindViewById<TabPageIndicator>(Resource.Id.page_gettingstarted_indicator);
             _layoutBase = FindViewById<LinearLayout>(Resource.Id.layout_gettingstarted);
 
-            var fragments = new List<GettingStartedTabsAdapter.FragmentInfo>
+            var fragments = new List<FragmentTabsAdapter.FragmentInfo>
               {
-                new GettingStartedTabsAdapter.FragmentInfo
+                new FragmentTabsAdapter.FragmentInfo
                 {
                   FragmentType = typeof(GettingStartedAutomaticFragment),
                   Title = GetString(Resource.String.GettingStartedAutomatic),
                   ViewModel = this.ViewModel
                 },
-                new GettingStartedTabsAdapter.FragmentInfo
+                new FragmentTabsAdapter.FragmentInfo
                 {
                   FragmentType = typeof(GettingStartedManualFragment),
                   Title = GetString(Resource.String.GettingStartedManual),
@@ -71,7 +71,7 @@ namespace BlackCoinMultipool.UI.Android.Views
 
             if (_viewPager != null && _pageIndicator != null)
             {
-                _tabAdapter = new GettingStartedTabsAdapter(this, SupportFragmentManager, fragments);
+                _tabAdapter = new FragmentTabsAdapter(this, SupportFragmentManager, fragments);
                 _viewPager.Adapter = _tabAdapter;
                 _viewPager.OffscreenPageLimit = 4;
                 _pageIndicator.SetViewPager(_viewPager);

@@ -1,37 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:local="http://schemas.android.com/apk/res/BlackCoinMultipool.UI.Android"
+    xmlns:local="http://schemas.android.com/apk/res/nl.auspex.blackcoinpool"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
-    <TextView
-        android:text="@string/DonateText"
-        android:layout_width="match_parent"
+    android:minHeight="25px"
+    android:id="@+id/layout_donation">
+    <dk.ostebaronen.droid.viewpagerindicator.TabPageIndicator
+        android:id="@+id/page_donate_indicator"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:id="@+id/textView_donation_text" />
-    <TextView
-        android:text=""
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView_donation_address"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        local:MvxBind="Text DonationAddress"
-        android:textStyle="bold" />
-    <Button
-        android:text="@string/DonateCopyToClipboard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_donation_button"
-        android:layout_margin="20dp"
-        local:MvxBind="Click CopyToClipboardCommand" />
-    <ImageView
-        android:src="@drawable/donate_qrcode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:id="@+id/imageView1" />
+        android:layout_width="fill_parent" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/page_donate_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 </LinearLayout>

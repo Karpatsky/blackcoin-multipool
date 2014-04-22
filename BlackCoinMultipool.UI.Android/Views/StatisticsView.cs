@@ -28,7 +28,7 @@ namespace BlackCoinMultipool.UI.Android.Views
     {
         private ViewPager _viewPager;
         private TabPageIndicator _pageIndicator;
-        private GettingStartedTabsAdapter _tabAdapter;
+        private FragmentTabsAdapter _tabAdapter;
         private LinearLayout _layoutBase;
 
         public StatisticsViewModel StatisticsViewModel
@@ -50,31 +50,37 @@ namespace BlackCoinMultipool.UI.Android.Views
             _pageIndicator = FindViewById<TabPageIndicator>(Resource.Id.page_stats_indicator);
             _layoutBase = FindViewById<LinearLayout>(Resource.Id.layout_statistics);
 
-            var fragments = new List<GettingStartedTabsAdapter.FragmentInfo>
+            var fragments = new List<FragmentTabsAdapter.FragmentInfo>
               {
-                new GettingStartedTabsAdapter.FragmentInfo
+                new FragmentTabsAdapter.FragmentInfo
                 {
                   FragmentType = typeof(StatisticsHashrateFragment),
-                  Title = GetString(Resource.String.PageLastHourHashrate),
+                  Title = GetString(Resource.String.PageStatsCurrentHashrateScrypt),
                   ViewModel = this.ViewModel
                 },
-                new GettingStartedTabsAdapter.FragmentInfo
+                new FragmentTabsAdapter.FragmentInfo
+                {
+                  FragmentType = typeof(StatisticsSha256HashrateFragment),
+                  Title = GetString(Resource.String.PageStatsCurrentHashrateSha256),
+                  ViewModel = this.ViewModel
+                },
+                new FragmentTabsAdapter.FragmentInfo
                 {
                   FragmentType = typeof(StatisticsStatisticsFragment),
-                  Title = GetString(Resource.String.PageStatistics),
+                  Title = GetString(Resource.String.PageStatsStats),
                   ViewModel = this.ViewModel
                 },
-                new GettingStartedTabsAdapter.FragmentInfo
+                new FragmentTabsAdapter.FragmentInfo
                 {
-                  FragmentType = typeof(StatisticsBalancesFragment),
-                  Title = GetString(Resource.String.PageBalances),
+                  FragmentType = typeof(StatisticsShiftsFragment),
+                  Title = GetString(Resource.String.PageStatsShifts),
                   ViewModel = this.ViewModel
                 }
               };
 
             if (_viewPager != null && _pageIndicator != null)
             {
-                _tabAdapter = new GettingStartedTabsAdapter(this, SupportFragmentManager, fragments);
+                _tabAdapter = new FragmentTabsAdapter(this, SupportFragmentManager, fragments);
                 _viewPager.Adapter = _tabAdapter;
                 _viewPager.OffscreenPageLimit = 4;
                 _pageIndicator.SetViewPager(_viewPager);

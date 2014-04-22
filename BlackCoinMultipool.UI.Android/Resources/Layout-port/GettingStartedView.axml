@@ -8,11 +8,11 @@
     android:minHeight="25px"
     android:id="@+id/layout_gettingstarted">
     <dk.ostebaronen.droid.viewpagerindicator.TabPageIndicator
-        android:id="@+id/indicator"
+        android:id="@+id/page_gettingstarted_indicator"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent" />
     <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
+        android:id="@+id/page_gettingstarted_pager"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />

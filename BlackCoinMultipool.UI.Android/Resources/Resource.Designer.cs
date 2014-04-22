@@ -770,125 +770,140 @@ namespace BlackCoinMultipool.UI.Android
 			// aapt resource value: 0x7f040005
 			public const int MvxBindingTagUnique = 2130968581;
 			
-			// aapt resource value: 0x7f04002b
-			public const int action_statistics_about = 2130968619;
+			// aapt resource value: 0x7f040030
+			public const int action_statistics_about = 2130968624;
 			
-			// aapt resource value: 0x7f040029
-			public const int action_statistics_donate = 2130968617;
+			// aapt resource value: 0x7f04002e
+			public const int action_statistics_donate = 2130968622;
 			
-			// aapt resource value: 0x7f040028
-			public const int action_statistics_refresh = 2130968616;
+			// aapt resource value: 0x7f04002d
+			public const int action_statistics_refresh = 2130968621;
 			
-			// aapt resource value: 0x7f04002a
-			public const int action_statistics_settings = 2130968618;
+			// aapt resource value: 0x7f04002f
+			public const int action_statistics_settings = 2130968623;
 			
 			// aapt resource value: 0x7f040003
 			public const int bottom = 2130968579;
 			
-			// aapt resource value: 0x7f04000c
-			public const int buttonScanQRCode = 2130968588;
+			// aapt resource value: 0x7f040011
+			public const int buttonScanQRCode = 2130968593;
 			
 			// aapt resource value: 0x7f040009
-			public const int button_donation_button = 2130968585;
+			public const int button_donation_bitcoin_button = 2130968585;
 			
-			// aapt resource value: 0x7f040019
-			public const int button_settings_clear = 2130968601;
+			// aapt resource value: 0x7f04000c
+			public const int button_donation_button = 2130968588;
 			
-			// aapt resource value: 0x7f040027
-			public const int contentFrame = 2130968615;
+			// aapt resource value: 0x7f04001e
+			public const int button_settings_clear = 2130968606;
 			
-			// aapt resource value: 0x7f04000f
-			public const int editTextAddress = 2130968591;
+			// aapt resource value: 0x7f04002c
+			public const int contentFrame = 2130968620;
+			
+			// aapt resource value: 0x7f040014
+			public const int editTextAddress = 2130968596;
 			
 			// aapt resource value: 0x7f04000a
 			public const int imageView1 = 2130968586;
 			
-			// aapt resource value: 0x7f040011
-			public const int indicator = 2130968593;
-			
-			// aapt resource value: 0x7f040010
-			public const int layout_gettingstarted = 2130968592;
-			
-			// aapt resource value: 0x7f040024
-			public const int layout_statistics = 2130968612;
+			// aapt resource value: 0x7f04000d
+			public const int layout_donation = 2130968589;
 			
 			// aapt resource value: 0x7f040015
-			public const int loadingImage = 2130968597;
+			public const int layout_gettingstarted = 2130968597;
 			
-			// aapt resource value: 0x7f040013
-			public const int loadingProgressBar = 2130968595;
+			// aapt resource value: 0x7f040029
+			public const int layout_statistics = 2130968617;
 			
-			// aapt resource value: 0x7f040016
-			public const int loadingProgressWheel = 2130968598;
+			// aapt resource value: 0x7f04001a
+			public const int loadingImage = 2130968602;
+			
+			// aapt resource value: 0x7f040018
+			public const int loadingProgressBar = 2130968600;
+			
+			// aapt resource value: 0x7f04001b
+			public const int loadingProgressWheel = 2130968603;
 			
 			// aapt resource value: 0x7f040000
 			public const int none = 2130968576;
 			
-			// aapt resource value: 0x7f040025
-			public const int page_stats_indicator = 2130968613;
+			// aapt resource value: 0x7f04000e
+			public const int page_donate_indicator = 2130968590;
 			
-			// aapt resource value: 0x7f040026
-			public const int page_stats_pager = 2130968614;
+			// aapt resource value: 0x7f04000f
+			public const int page_donate_pager = 2130968591;
+			
+			// aapt resource value: 0x7f040016
+			public const int page_gettingstarted_indicator = 2130968598;
+			
+			// aapt resource value: 0x7f040017
+			public const int page_gettingstarted_pager = 2130968599;
+			
+			// aapt resource value: 0x7f04002a
+			public const int page_stats_indicator = 2130968618;
+			
+			// aapt resource value: 0x7f04002b
+			public const int page_stats_pager = 2130968619;
+			
+			// aapt resource value: 0x7f040013
+			public const int textViewEnterYourAddress = 2130968595;
+			
+			// aapt resource value: 0x7f040010
+			public const int textViewExplanation = 2130968592;
 			
 			// aapt resource value: 0x7f040012
-			public const int pager = 2130968594;
+			public const int textViewHelp = 2130968594;
 			
-			// aapt resource value: 0x7f04000e
-			public const int textViewEnterYourAddress = 2130968590;
-			
-			// aapt resource value: 0x7f04000b
-			public const int textViewExplanation = 2130968587;
-			
-			// aapt resource value: 0x7f04000d
-			public const int textViewHelp = 2130968589;
-			
-			// aapt resource value: 0x7f040014
-			public const int textViewStatus = 2130968596;
+			// aapt resource value: 0x7f040019
+			public const int textViewStatus = 2130968601;
 			
 			// aapt resource value: 0x7f040006
 			public const int textView_about_devtitle = 2130968582;
 			
 			// aapt resource value: 0x7f040008
-			public const int textView_donation_address = 2130968584;
+			public const int textView_donation_bitcoin_address = 2130968584;
+			
+			// aapt resource value: 0x7f04000b
+			public const int textView_donation_blackcoin_address = 2130968587;
 			
 			// aapt resource value: 0x7f040007
 			public const int textView_donation_text = 2130968583;
 			
-			// aapt resource value: 0x7f040018
-			public const int textView_settings_address = 2130968600;
-			
-			// aapt resource value: 0x7f040017
-			public const int textView_settings_currentlysetaddress = 2130968599;
-			
-			// aapt resource value: 0x7f040023
-			public const int textView_stats_datejoined = 2130968611;
-			
-			// aapt resource value: 0x7f040022
-			public const int textView_stats_datejoinedlabel = 2130968610;
-			
 			// aapt resource value: 0x7f04001d
-			public const int textView_stats_last24hours = 2130968605;
+			public const int textView_settings_address = 2130968605;
 			
 			// aapt resource value: 0x7f04001c
-			public const int textView_stats_last24hourslabel = 2130968604;
+			public const int textView_settings_currentlysetaddress = 2130968604;
+			
+			// aapt resource value: 0x7f040028
+			public const int textView_stats_datejoined = 2130968616;
+			
+			// aapt resource value: 0x7f040027
+			public const int textView_stats_datejoinedlabel = 2130968615;
+			
+			// aapt resource value: 0x7f040022
+			public const int textView_stats_last24hours = 2130968610;
 			
 			// aapt resource value: 0x7f040021
-			public const int textView_stats_lastpayout = 2130968609;
+			public const int textView_stats_last24hourslabel = 2130968609;
+			
+			// aapt resource value: 0x7f040026
+			public const int textView_stats_lastpayout = 2130968614;
+			
+			// aapt resource value: 0x7f040025
+			public const int textView_stats_lastpayoutlabel = 2130968613;
+			
+			// aapt resource value: 0x7f040024
+			public const int textView_stats_miningdays = 2130968612;
+			
+			// aapt resource value: 0x7f040023
+			public const int textView_stats_miningdayslabel = 2130968611;
 			
 			// aapt resource value: 0x7f040020
-			public const int textView_stats_lastpayoutlabel = 2130968608;
+			public const int textView_stats_totalprofit = 2130968608;
 			
 			// aapt resource value: 0x7f04001f
-			public const int textView_stats_miningdays = 2130968607;
-			
-			// aapt resource value: 0x7f04001e
-			public const int textView_stats_miningdayslabel = 2130968606;
-			
-			// aapt resource value: 0x7f04001b
-			public const int textView_stats_totalprofit = 2130968603;
-			
-			// aapt resource value: 0x7f04001a
-			public const int textView_stats_totalprofitlabel = 2130968602;
+			public const int textView_stats_totalprofitlabel = 2130968607;
 			
 			// aapt resource value: 0x7f040004
 			public const int top = 2130968580;
@@ -947,49 +962,58 @@ namespace BlackCoinMultipool.UI.Android
 			public const int blackcointheme_tab_indicator_holo = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int DonationView = 2130903042;
+			public const int DonateBitcoinFragment = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int GettingStartedAutomaticFragment = 2130903043;
+			public const int DonateBlackcoinFragment = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int GettingStartedManualFragment = 2130903044;
+			public const int DonationView = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int GettingStartedView = 2130903045;
+			public const int GettingStartedAutomaticFragment = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int loading = 2130903046;
+			public const int GettingStartedManualFragment = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int loadingimage = 2130903047;
+			public const int GettingStartedView = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int loadingprogress = 2130903048;
+			public const int loading = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int SettingsView = 2130903049;
+			public const int loadingimage = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int SplashScreen = 2130903050;
+			public const int loadingprogress = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int StatisticsBalancesFragment = 2130903051;
+			public const int SettingsView = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int StatisticsHashrateFragment = 2130903052;
+			public const int SplashScreen = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int StatisticsStatisticsFragment = 2130903053;
+			public const int StatisticsHashrateFragment = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int StatisticsView = 2130903054;
+			public const int StatisticsSha256HashrateFragment = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int zxingscanneractivitylayout = 2130903055;
+			public const int StatisticsShiftsFragment = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int zxingscannerfragmentlayout = 2130903056;
+			public const int StatisticsStatisticsFragment = 2130903056;
+			
+			// aapt resource value: 0x7f030011
+			public const int StatisticsView = 2130903057;
+			
+			// aapt resource value: 0x7f030012
+			public const int zxingscanneractivitylayout = 2130903058;
+			
+			// aapt resource value: 0x7f030013
+			public const int zxingscannerfragmentlayout = 2130903059;
 			
 			static Layout()
 			{
@@ -1065,77 +1089,86 @@ namespace BlackCoinMultipool.UI.Android
 			// aapt resource value: 0x7f0a0014
 			public const int DonateCopyToClipboard = 2131361812;
 			
-			// aapt resource value: 0x7f0a0015
-			public const int DonateText = 2131361813;
-			
-			// aapt resource value: 0x7f0a001e
-			public const int GHashPerSecond = 2131361822;
-			
-			// aapt resource value: 0x7f0a0016
-			public const int GettingStartedAutomatic = 2131361814;
+			// aapt resource value: 0x7f0a0018
+			public const int DonateTabBitcoin = 2131361816;
 			
 			// aapt resource value: 0x7f0a0017
-			public const int GettingStartedEnterYourAddress = 2131361815;
+			public const int DonateTabBlackcoin = 2131361815;
 			
-			// aapt resource value: 0x7f0a0018
-			public const int GettingStartedExplanation = 2131361816;
+			// aapt resource value: 0x7f0a0015
+			public const int DonateTextBitcoin = 2131361813;
+			
+			// aapt resource value: 0x7f0a0016
+			public const int DonateTextBlackcoin = 2131361814;
+			
+			// aapt resource value: 0x7f0a0021
+			public const int GHashPerSecond = 2131361825;
 			
 			// aapt resource value: 0x7f0a0019
-			public const int GettingStartedHelpQRCode = 2131361817;
+			public const int GettingStartedAutomatic = 2131361817;
 			
 			// aapt resource value: 0x7f0a001a
-			public const int GettingStartedManual = 2131361818;
+			public const int GettingStartedEnterYourAddress = 2131361818;
 			
 			// aapt resource value: 0x7f0a001b
-			public const int GettingStartedQRCodePopupText = 2131361819;
+			public const int GettingStartedExplanation = 2131361819;
 			
 			// aapt resource value: 0x7f0a001c
-			public const int GettingStartedSave = 2131361820;
+			public const int GettingStartedHelpQRCode = 2131361820;
 			
 			// aapt resource value: 0x7f0a001d
-			public const int GettingStartedScanQR = 2131361821;
+			public const int GettingStartedManual = 2131361821;
+			
+			// aapt resource value: 0x7f0a001e
+			public const int GettingStartedQRCodePopupText = 2131361822;
 			
 			// aapt resource value: 0x7f0a001f
-			public const int HashPerSecond = 2131361823;
+			public const int GettingStartedSave = 2131361823;
+			
+			// aapt resource value: 0x7f0a0020
+			public const int GettingStartedScanQR = 2131361824;
+			
+			// aapt resource value: 0x7f0a0022
+			public const int HashPerSecond = 2131361826;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int Hello = 2131361792;
 			
-			// aapt resource value: 0x7f0a0025
-			public const int MHashPerSecond = 2131361829;
-			
-			// aapt resource value: 0x7f0a0021
-			public const int MenuAbout = 2131361825;
-			
-			// aapt resource value: 0x7f0a0022
-			public const int MenuDonate = 2131361826;
-			
-			// aapt resource value: 0x7f0a0023
-			public const int MenuRefresh = 2131361827;
+			// aapt resource value: 0x7f0a0028
+			public const int MHashPerSecond = 2131361832;
 			
 			// aapt resource value: 0x7f0a0024
-			public const int MenuSettings = 2131361828;
+			public const int MenuAbout = 2131361828;
+			
+			// aapt resource value: 0x7f0a0025
+			public const int MenuDonate = 2131361829;
 			
 			// aapt resource value: 0x7f0a0026
-			public const int PageAbout = 2131361830;
+			public const int MenuRefresh = 2131361830;
 			
 			// aapt resource value: 0x7f0a0027
-			public const int PageBalances = 2131361831;
-			
-			// aapt resource value: 0x7f0a0028
-			public const int PageDonate = 2131361832;
+			public const int MenuSettings = 2131361831;
 			
 			// aapt resource value: 0x7f0a0029
-			public const int PageGettingStarted = 2131361833;
-			
-			// aapt resource value: 0x7f0a002a
-			public const int PageLastHourHashrate = 2131361834;
+			public const int PageAbout = 2131361833;
 			
 			// aapt resource value: 0x7f0a002b
-			public const int PageSettings = 2131361835;
+			public const int PageDonate = 2131361835;
 			
 			// aapt resource value: 0x7f0a002c
-			public const int PageStatistics = 2131361836;
+			public const int PageGettingStarted = 2131361836;
+			
+			// aapt resource value: 0x7f0a002d
+			public const int PageLastHourHashrate = 2131361837;
+			
+			// aapt resource value: 0x7f0a002e
+			public const int PageSettings = 2131361838;
+			
+			// aapt resource value: 0x7f0a002a
+			public const int PageShifts = 2131361834;
+			
+			// aapt resource value: 0x7f0a002f
+			public const int PageStatistics = 2131361839;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int PageStatsCurrentHashrateScrypt = 2131361795;
@@ -1149,56 +1182,56 @@ namespace BlackCoinMultipool.UI.Android
 			// aapt resource value: 0x7f0a0005
 			public const int PageStatsStats = 2131361797;
 			
-			// aapt resource value: 0x7f0a002d
-			public const int PopupFoundAddress = 2131361837;
-			
-			// aapt resource value: 0x7f0a002e
-			public const int PopupIsThisCorrect = 2131361838;
-			
-			// aapt resource value: 0x7f0a002f
-			public const int PopupNo = 2131361839;
-			
 			// aapt resource value: 0x7f0a0030
-			public const int PopupOK = 2131361840;
+			public const int PopupFoundAddress = 2131361840;
 			
 			// aapt resource value: 0x7f0a0031
-			public const int PopupYes = 2131361841;
+			public const int PopupIsThisCorrect = 2131361841;
 			
 			// aapt resource value: 0x7f0a0032
-			public const int SettingsChangeAddress = 2131361842;
+			public const int PopupNo = 2131361842;
 			
 			// aapt resource value: 0x7f0a0033
-			public const int SettingsCurrentlySetAddress = 2131361843;
-			
-			// aapt resource value: 0x7f0a0035
-			public const int StatisticsAgo = 2131361845;
+			public const int PopupOK = 2131361843;
 			
 			// aapt resource value: 0x7f0a0034
-			public const int StatisticsDateJoined = 2131361844;
+			public const int PopupYes = 2131361844;
+			
+			// aapt resource value: 0x7f0a0035
+			public const int SettingsChangeAddress = 2131361845;
 			
 			// aapt resource value: 0x7f0a0036
-			public const int StatisticsDay = 2131361846;
-			
-			// aapt resource value: 0x7f0a0037
-			public const int StatisticsDays = 2131361847;
+			public const int SettingsCurrentlySetAddress = 2131361846;
 			
 			// aapt resource value: 0x7f0a0038
-			public const int StatisticsLast24hProfits = 2131361848;
+			public const int StatisticsAgo = 2131361848;
+			
+			// aapt resource value: 0x7f0a0037
+			public const int StatisticsDateJoined = 2131361847;
 			
 			// aapt resource value: 0x7f0a0039
-			public const int StatisticsLastPayout = 2131361849;
+			public const int StatisticsDay = 2131361849;
 			
 			// aapt resource value: 0x7f0a003a
-			public const int StatisticsMiningDays = 2131361850;
+			public const int StatisticsDays = 2131361850;
 			
 			// aapt resource value: 0x7f0a003b
-			public const int StatisticsTotalProfits = 2131361851;
+			public const int StatisticsLast24hProfits = 2131361851;
 			
 			// aapt resource value: 0x7f0a003c
-			public const int THashPerSecond = 2131361852;
+			public const int StatisticsLastPayout = 2131361852;
 			
-			// aapt resource value: 0x7f0a0020
-			public const int kHashPerSecond = 2131361824;
+			// aapt resource value: 0x7f0a003d
+			public const int StatisticsMiningDays = 2131361853;
+			
+			// aapt resource value: 0x7f0a003e
+			public const int StatisticsTotalProfits = 2131361854;
+			
+			// aapt resource value: 0x7f0a003f
+			public const int THashPerSecond = 2131361855;
+			
+			// aapt resource value: 0x7f0a0023
+			public const int kHashPerSecond = 2131361827;
 			
 			// aapt resource value: 0x7f0a0002
 			public const int library_name = 2131361794;

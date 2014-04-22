@@ -13,7 +13,7 @@ using Cirrious.MvvmCross.ViewModels;
 
 namespace BlackCoinMultipool.UI.Android.Adapters
 {
-    public class GettingStartedTabsAdapter : FragmentPagerAdapter
+    public class FragmentTabsAdapter : FragmentPagerAdapter
     {
         public class FragmentInfo
         {
@@ -40,7 +40,7 @@ namespace BlackCoinMultipool.UI.Android.Adapters
             return fragment;
         }
 
-        public GettingStartedTabsAdapter(
+        public FragmentTabsAdapter(
           Context context, FragmentManager fragmentManager, IEnumerable<FragmentInfo> fragments)
             : base(fragmentManager)
         {

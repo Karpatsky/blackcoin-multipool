@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="nl.auspex.blackcoinpool">
 	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="14" />
 	<application android:theme="@style/BlackcoinTheme"></application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

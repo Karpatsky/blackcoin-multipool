@@ -32,7 +32,7 @@ namespace BlackCoinMultipool.UI.Android.Views
 
             ActionBar.Title = GetString(Resource.String.PageAbout);
             ActionBar.SetHomeButtonEnabled(true);
-            ActionBar.SetDisplayHomeAsUpEnabled(true);  // < icon erbij
+            ActionBar.SetDisplayHomeAsUpEnabled(true);  
             ActionBar.Show();
         }
         #endregion

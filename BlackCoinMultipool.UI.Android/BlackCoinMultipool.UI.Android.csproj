@@ -151,7 +151,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapters\GettingStartedTabsAdapter.cs" />
+    <Compile Include="Adapters\FragmentTabsAdapter.cs" />
     <Compile Include="Bootstrap\BarCodeScannerPluginBootstrap.cs" />
     <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
     <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
@@ -167,10 +167,13 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\AboutView.cs" />
     <Compile Include="Views\DonationView.cs" />
+    <Compile Include="Views\Fragments\DonateBitcoinFragment.cs" />
+    <Compile Include="Views\Fragments\DonateBlackcoinFragment.cs" />
     <Compile Include="Views\Fragments\GettingStartedAutomaticFragment.cs" />
     <Compile Include="Views\Fragments\GettingStartedManualFragment.cs" />
-    <Compile Include="Views\Fragments\StatisticsBalancesFragment.cs" />
+    <Compile Include="Views\Fragments\StatisticsShiftsFragment.cs" />
     <Compile Include="Views\Fragments\StatisticsHashrateFragment.cs" />
+    <Compile Include="Views\Fragments\StatisticsSha256HashrateFragment.cs" />
     <Compile Include="Views\Fragments\StatisticsStatisticsFragment.cs" />
     <Compile Include="Views\GettingStartedView.cs" />
     <Compile Include="Views\SettingsView.cs" />
@@ -376,7 +379,7 @@
     <None Include="packages.config" />
     <AndroidResource Include="Resources\Layout\GettingStartedAutomaticFragment.axml" />
     <AndroidResource Include="Resources\Layout\GettingStartedManualFragment.axml" />
-    <AndroidResource Include="Resources\Layout\StatisticsBalancesFragment.axml" />
+    <AndroidResource Include="Resources\Layout\StatisticsShiftsFragment.axml" />
     <AndroidResource Include="Resources\Layout\StatisticsHashrateFragment.axml" />
     <AndroidResource Include="Resources\Layout\StatisticsStatisticsFragment.axml" />
     <AndroidResource Include="Resources\Layout-port\AboutView.axml" />
@@ -388,6 +391,15 @@
     <AndroidResource Include="Resources\Menu\statistics_activity_actions.axml" />
     <AndroidResource Include="Resources\Drawable\blackcointheme_ab_background_textured.axml" />
     <AndroidResource Include="Resources\Drawable\blackcointheme_btn_cab_done.axml" />
+    <AndroidResource Include="Resources\Layout\StatisticsSha256HashrateFragment.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\DonateBlackcoinFragment.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\DonateBitcoinFragment.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BlackCoinMultipool.Core\BlackCoinMultipool.Core.csproj">

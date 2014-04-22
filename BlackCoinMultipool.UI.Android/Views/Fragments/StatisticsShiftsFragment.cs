@@ -15,7 +15,7 @@ using Cirrious.MvvmCross.Binding.Droid.Views;
 
 namespace BlackCoinMultipool.UI.Android.Views.Fragments
 {
-    class StatisticsShiftsFragment : MvxFragment
+    public class StatisticsShiftsFragment : MvxFragment
     {
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container,
                                   Bundle savedInstanceState)

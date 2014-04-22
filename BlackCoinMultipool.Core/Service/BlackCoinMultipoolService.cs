@@ -19,12 +19,18 @@ namespace BlackCoinMultipool.Core.Service
 
         public async Task<Statistics> GetStatistics(string bitcoinAddress)
         {
-            string pageHtml = await GetPage(bitcoinAddress);
-
-            Statistics stats = await ParsePage(pageHtml);
-            stats.Address = bitcoinAddress;
-
-            return stats;
+            try
+            {
+                string pageHtml = await GetPage(bitcoinAddress);
+                Statistics stats = await ParsePage(pageHtml);
+                stats.Address = bitcoinAddress;
+                return stats;
+            }
+            catch
+            {
+                // unable to get page
+                return new Statistics();
+            }
         }
 
         private async Task<string> GetPage(string bitcoinAddress)

@@ -80,14 +80,15 @@ namespace BlackCoinMultipool.Core.ViewModels
         private async void DoSaveAddressCommand()
         {
             // save address
-            var promptResult = await _dialogService.ConfirmAsync(string.Format("{0}\n\n{1}", _blackcoinAddress, _commonService.PopupIsThisCorrect), okText: _commonService.PopupYes, cancelText: _commonService.PopupNo);
+            //var promptResult = await _dialogService.ConfirmAsync(string.Format("{0}\n\n{1}", _blackcoinAddress, _commonService.PopupIsThisCorrect), okText: _commonService.PopupYes, cancelText: _commonService.PopupNo);
 
-            if (promptResult)
-            {
+            //if (promptResult)
+            //{
                 _settingsService.BlackCoinAddress = _blackcoinAddress;
 
-                ShowViewModel<StatisticsViewModel>();
-            }
+                if (!string.IsNullOrEmpty(_blackcoinAddress))
+                    ShowViewModel<StatisticsViewModel>();
+            //}
         }
 
         private MvxCommand qrCodeHelpCommand;

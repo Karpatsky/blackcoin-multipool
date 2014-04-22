@@ -623,136 +623,142 @@ namespace BlackCoinMultipool.UI.Android
 			public const int blackcointheme_btn_default_pressed_holo_dark = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int blackcointheme_cab_background_bottom = 2130837520;
+			public const int blackcointheme_btn_home_as_up = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int blackcointheme_cab_background_top = 2130837521;
+			public const int blackcointheme_btn_menu = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int blackcointheme_edit_text_holo_dark = 2130837522;
+			public const int blackcointheme_cab_background_bottom = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int blackcointheme_progress_bg_holo_dark = 2130837523;
+			public const int blackcointheme_cab_background_top = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int blackcointheme_progress_horizontal_holo_dark = 2130837524;
+			public const int blackcointheme_edit_text_holo_dark = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int blackcointheme_progress_indeterminate_horizontal_holo_dark = 2130837525;
+			public const int blackcointheme_progress_bg_holo_dark = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int blackcointheme_progress_primary_holo_dark = 2130837526;
+			public const int blackcointheme_progress_horizontal_holo_dark = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int blackcointheme_progress_secondary_holo_dark = 2130837527;
+			public const int blackcointheme_progress_indeterminate_horizontal_holo_dark = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int blackcointheme_progressbar_indeterminate_holo1 = 2130837528;
+			public const int blackcointheme_progress_primary_holo_dark = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int blackcointheme_progressbar_indeterminate_holo2 = 2130837529;
+			public const int blackcointheme_progress_secondary_holo_dark = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int blackcointheme_progressbar_indeterminate_holo3 = 2130837530;
+			public const int blackcointheme_progressbar_indeterminate_holo1 = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int blackcointheme_progressbar_indeterminate_holo4 = 2130837531;
+			public const int blackcointheme_progressbar_indeterminate_holo2 = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int blackcointheme_progressbar_indeterminate_holo5 = 2130837532;
+			public const int blackcointheme_progressbar_indeterminate_holo3 = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int blackcointheme_progressbar_indeterminate_holo6 = 2130837533;
+			public const int blackcointheme_progressbar_indeterminate_holo4 = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int blackcointheme_progressbar_indeterminate_holo7 = 2130837534;
+			public const int blackcointheme_progressbar_indeterminate_holo5 = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int blackcointheme_progressbar_indeterminate_holo8 = 2130837535;
+			public const int blackcointheme_progressbar_indeterminate_holo6 = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int blackcointheme_tab_indicator_holo = 2130837536;
+			public const int blackcointheme_progressbar_indeterminate_holo7 = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int blackcointheme_tab_selected_focused_holo = 2130837537;
+			public const int blackcointheme_progressbar_indeterminate_holo8 = 2130837537;
 			
 			// aapt resource value: 0x7f020022
-			public const int blackcointheme_tab_selected_holo = 2130837538;
+			public const int blackcointheme_tab_indicator_holo = 2130837538;
 			
 			// aapt resource value: 0x7f020023
-			public const int blackcointheme_tab_selected_pressed_holo = 2130837539;
+			public const int blackcointheme_tab_selected_focused_holo = 2130837539;
 			
 			// aapt resource value: 0x7f020024
-			public const int blackcointheme_tab_unselected_focused_holo = 2130837540;
+			public const int blackcointheme_tab_selected_holo = 2130837540;
 			
 			// aapt resource value: 0x7f020025
-			public const int blackcointheme_tab_unselected_holo = 2130837541;
+			public const int blackcointheme_tab_selected_pressed_holo = 2130837541;
 			
 			// aapt resource value: 0x7f020026
-			public const int blackcointheme_tab_unselected_pressed_holo = 2130837542;
+			public const int blackcointheme_tab_unselected_focused_holo = 2130837542;
 			
 			// aapt resource value: 0x7f020027
-			public const int blackcointheme_textfield_activated_holo_dark = 2130837543;
+			public const int blackcointheme_tab_unselected_holo = 2130837543;
 			
 			// aapt resource value: 0x7f020028
-			public const int blackcointheme_textfield_default_holo_dark = 2130837544;
+			public const int blackcointheme_tab_unselected_pressed_holo = 2130837544;
 			
 			// aapt resource value: 0x7f020029
-			public const int blackcointheme_textfield_disabled_focused_holo_dark = 2130837545;
+			public const int blackcointheme_textfield_activated_holo_dark = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int blackcointheme_textfield_disabled_holo_dark = 2130837546;
+			public const int blackcointheme_textfield_default_holo_dark = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int blackcointheme_textfield_focused_holo_dark = 2130837547;
+			public const int blackcointheme_textfield_disabled_focused_holo_dark = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int donate_qrcode = 2130837548;
+			public const int blackcointheme_textfield_disabled_holo_dark = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int ic_action_donate = 2130837549;
+			public const int blackcointheme_textfield_focused_holo_dark = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int ic_action_refresh = 2130837550;
+			public const int donate_qrcode = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int ic_errorstatus = 2130837551;
+			public const int ic_action_donate = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int ic_successstatus = 2130837552;
+			public const int ic_action_refresh = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int Icon = 2130837553;
+			public const int ic_errorstatus = 2130837553;
 			
 			// aapt resource value: 0x7f020032
-			public const int roundedbg = 2130837554;
+			public const int ic_successstatus = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int roundedbgdark = 2130837555;
+			public const int Icon = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int splash = 2130837556;
+			public const int roundedbg = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int vpi__tab_indicator = 2130837557;
+			public const int roundedbgdark = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int vpi__tab_selected_focused_holo = 2130837558;
+			public const int splash = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int vpi__tab_selected_holo = 2130837559;
+			public const int vpi__tab_indicator = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int vpi__tab_selected_pressed_holo = 2130837560;
+			public const int vpi__tab_selected_focused_holo = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int vpi__tab_unselected_focused_holo = 2130837561;
+			public const int vpi__tab_selected_holo = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int vpi__tab_unselected_holo = 2130837562;
+			public const int vpi__tab_selected_pressed_holo = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int vpi__tab_unselected_pressed_holo = 2130837563;
+			public const int vpi__tab_unselected_focused_holo = 2130837563;
+			
+			// aapt resource value: 0x7f02003c
+			public const int vpi__tab_unselected_holo = 2130837564;
+			
+			// aapt resource value: 0x7f02003d
+			public const int vpi__tab_unselected_pressed_holo = 2130837565;
 			
 			static Drawable()
 			{
@@ -1249,20 +1255,23 @@ namespace BlackCoinMultipool.UI.Android
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f09000d
-			public const int ActionBar_Solid_BlackcoinTheme = 2131296269;
-			
 			// aapt resource value: 0x7f09000e
-			public const int ActionButton_CloseMode_BlackcoinTheme = 2131296270;
+			public const int ActionBar_Solid_BlackcoinTheme = 2131296270;
+			
+			// aapt resource value: 0x7f09000f
+			public const int ActionButton_CloseMode_BlackcoinTheme = 2131296271;
 			
 			// aapt resource value: 0x7f09000b
 			public const int BlackcoinTheme = 2131296267;
 			
+			// aapt resource value: 0x7f09000c
+			public const int BlackcoinTheme_ActionBar_Overflow = 2131296268;
+			
 			// aapt resource value: 0x7f090006
 			public const int ButtonBlackcoinTheme = 2131296262;
 			
-			// aapt resource value: 0x7f09000c
-			public const int CustomTabPageIndicator = 2131296268;
+			// aapt resource value: 0x7f09000d
+			public const int CustomTabPageIndicator = 2131296269;
 			
 			// aapt resource value: 0x7f090007
 			public const int ImageButtonBlackcoinTheme = 2131296263;

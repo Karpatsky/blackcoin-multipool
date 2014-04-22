@@ -20,13 +20,20 @@
     <item name="android:actionModeSplitBackground">@drawable/blackcointheme_cab_background_bottom</item>
     <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.BlackcoinTheme</item>
 
+    <item name="android:homeAsUpIndicator">@drawable/blackcointheme_btn_home_as_up</item>
+    <item name="android:actionOverflowButtonStyle">@style/BlackcoinTheme.ActionBar.Overflow</item>
+
+  </style>
+
+  <style name="BlackcoinTheme.ActionBar.Overflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
+    <item name="android:src">@drawable/blackcointheme_btn_menu</item>
   </style>
 
   <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
     <item name="android:background">@drawable/blackcointheme_tab_indicator_holo</item>
   </style>
 
-  <style name="ActionBar.Solid.BlackcoinTheme" parent="@android:style/Widget.Holo.ActionBar.Solid">
+  <style name="ActionBar.Solid.BlackcoinTheme" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
     <item name="android:background">@drawable/blackcointheme_ab_solid</item>
     <item name="android:backgroundStacked">@drawable/blackcointheme_ab_stacked_solid</item>
     <item name="android:backgroundSplit">@drawable/blackcointheme_ab_bottom_solid</item>

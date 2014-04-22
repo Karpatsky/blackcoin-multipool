@@ -370,6 +370,14 @@
     <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_btn_cab_done_pressed.9.png" />
     <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_cab_background_bottom.9.png" />
     <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_cab_background_top.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_btn_home_as_up.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_btn_home_as_up.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_btn_home_as_up.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_btn_home_as_up.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\blackcointheme_btn_menu.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_btn_menu.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_btn_menu.png" />
+    <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_btn_menu.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />

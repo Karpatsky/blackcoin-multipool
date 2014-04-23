@@ -9,11 +9,11 @@
         android:layout_height="fill_parent"
         android:padding="10dp"
         local:gaugeBackground="#404040"
-        local:gaugeForeground="#ffbb33"
+        local:gaugeForeground="@color/blackcointheme_color"
         local:background="@android:color/transparent"
         local:textColor="@android:color/white"
-        local:value="50.0"
+        local:value="0.0"
         local:maxValue="10.0"
-        local:unit="MH/s"
+        local:unit="@string/MHashPerSecond"
         local:MvxBind="Value CurrentHashrateScrypt" />
 </LinearLayout>

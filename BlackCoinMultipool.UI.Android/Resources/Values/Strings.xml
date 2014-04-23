@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
-    <string name="PageStatsCurrentHashrateScrypt">hashrate scrypt</string>
-    <string name="PageStatsCurrentHashrateSha256">hashrate sha256</string>
-    <string name="PageStatsStats">statistics</string>
-    <string name="PageStatsShifts">shifts</string>
+    <string name="PageStatsCurrentHashrateScrypt">Scrypt hashrate</string>
+    <string name="PageStatsCurrentHashrateSha256">SHA256 hashrate</string>
+    <string name="PageStatsStats">Statistics</string>
+    <string name="PageStatsShifts">Shifts</string>
   <string name="AboutApplicationTitle">About this application</string>
   <string name="AboutApplicationText">This application is in no way affiliated with BlackCoin. The source of this application is released under the Microsoft Public License (MS-PL) and is available on github.com/auspex-nl.</string>
   <string name="AboutDeveloperText">Rick Jansen\nWebsite: auspex.nl\nGithub: github.com/auspex-nl</string>
@@ -56,13 +56,15 @@
   <string name="PopupYes">Yes</string>
   <string name="SettingsChangeAddress">Change address</string>
   <string name="SettingsCurrentlySetAddress">Currently set address:</string>
-  <string name="StatisticsDateJoined">Date joined</string>
+  <string name="ShiftsTimestamp">Timestamp</string>
+  <string name="ShiftsProfitability">BC/MH</string>
+  <string name="ShiftsPayout">Payout</string>
   <string name="StatisticsAgo">ago</string>
   <string name="StatisticsDay">Day</string>
   <string name="StatisticsDays">Days</string>
-  <string name="StatisticsLast24hProfits">Last 24h profits</string>
-  <string name="StatisticsLastPayout">Last payout</string>
-  <string name="StatisticsMiningDays">Mining days</string>
-  <string name="StatisticsTotalProfits">Total profits</string>
+  <string name="StatisticsLatestPayoutScrypt">Latest scrypt payout</string>
+  <string name="StatisticsLatestPayoutSha256">Latest sha256 payout</string>
+  <string name="StatisticsCurrentSharesScrypt">Current scrypt shares</string>
+  <string name="StatisticsCurrentSharesSha256">Current sha256 shares</string>
   <string name="THashPerSecond">THash/s</string>
 </resources>

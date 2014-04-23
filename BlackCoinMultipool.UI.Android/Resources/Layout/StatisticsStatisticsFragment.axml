@@ -4,94 +4,98 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_margin="20dp">
-<!-- Total Profits -->
+    android:layout_margin="20dp"
+    android:padding="15dp">
+<!-- Latest Payout Scrypt -->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
         <TextView
-            android:text="@string/StatisticsTotalProfits"
-            android:layout_width="wrap_content"
+            android:text="@string/StatisticsLatestPayoutScrypt"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_stats_totalprofitlabel"
-            android:layout_weight="1" />
-        <TextView
-            android:text=""
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView_stats_totalprofit"
-            local:MvxBind="Text TotalProfit"
-            android:layout_weight="1" />
-    </LinearLayout>
-<!-- Last 24h Profits -->
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:text="@string/StatisticsLast24hProfits"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView_stats_last24hourslabel"
-            android:layout_weight="1" />
+            android:id="@+id/textView_stats_latestpayout_scrypt_label"
+            android:textSize="18dp"
+            android:layout_weight="2" />
         <TextView
             android:text=""
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_stats_last24hours"
-            local:MvxBind="Text Last24Hours"
+            android:id="@+id/textView_stats_latestpayout_scrypt"
+            android:textSize="18dp"
+            android:gravity="left"
+            local:MvxBind="Text LatestPayoutScrypt"
             android:layout_weight="1" />
     </LinearLayout>
-<!-- Mining Days -->
+<!-- Latest Payout SHA256-->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
         <TextView
-            android:text="@string/StatisticsMiningDays"
-            android:layout_width="wrap_content"
+            android:text="@string/StatisticsLatestPayoutSha256"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_stats_miningdayslabel" />
+            android:id="@+id/textView_stats_latestpayout_sha256_label"
+            android:textSize="18dp"
+            android:layout_weight="2" />
         <TextView
             android:text=""
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_stats_miningdays"
-            local:MvxBind="Text MiningDays" />
+            android:id="@+id/textView_stats_latestpayout_sha256"
+            android:textSize="18dp"
+            android:gravity="left"
+            local:MvxBind="Text LatestPayoutSha256"
+            android:layout_weight="1" />
     </LinearLayout>
-<!-- Last Payout -->
+<!-- Current shares scrypt -->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
         <TextView
-            android:text="@string/StatisticsLastPayout"
-            android:layout_width="wrap_content"
+            android:text="@string/StatisticsCurrentSharesScrypt"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_stats_lastpayoutlabel" />
+            android:id="@+id/textView_stats_shares_scrypt_label"
+            android:textSize="18dp"
+            android:layout_weight="2" />
         <TextView
             android:text=""
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_stats_lastpayout"
-            local:MvxBind="Text LastPayout" />
+            android:id="@+id/textView_stats_shares_scrypt"
+            android:textSize="18dp"
+            android:gravity="left"
+            local:MvxBind="Text CurrentSharesScrypt"
+            android:layout_weight="1" />
     </LinearLayout>
-<!-- Date Joined -->
+<!-- Current shares sha256 -->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
         <TextView
-            android:text="@string/StatisticsDateJoined"
-            android:layout_width="wrap_content"
+            android:text="@string/StatisticsCurrentSharesSha256"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_stats_datejoinedlabel" />
+            android:id="@+id/textView_stats_shares_sha256_label"
+            android:textSize="18dp"
+            android:layout_weight="2" />
         <TextView
             android:text=""
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_stats_datejoined"
-            local:MvxBind="Text DateJoined" />
+            android:id="@+id/textView_stats_shares_sha256"
+            android:textSize="18dp"
+            android:gravity="left"
+            local:MvxBind="Text CurrentSharesSha256"
+            android:layout_weight="1" />
     </LinearLayout>
 </LinearLayout>

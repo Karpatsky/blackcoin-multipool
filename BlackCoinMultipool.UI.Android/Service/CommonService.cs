@@ -19,11 +19,11 @@ namespace BlackCoinMultipool.UI.Android.Service
     {
         public string DonationAddressBlackcoin
         {
-            get { return "BM4mL6tSo9EphkrnNBppzhjg5GsCXa9C2e"; }
+            get { return "BMwBJkrFmkMb2MT71dJHmRLnWSkBHgVQRJ"; }
         }
         public string DonationAddressBitcoin
         {
-            get { return "13uua9VoFYPaRCXyuyepwpMQ1nu7JsAAT6"; }
+            get { return "16snW2QYHzKXRZ83HccZmUovrbYPd6uFGi"; }
         }   
 
         #region Translation resources needed in Core

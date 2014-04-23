@@ -16,6 +16,7 @@ namespace BlackCoinMultipool.UI.Android.Views.Controls
 {
     public class GaugeView : View
     {
+        #region Private Members
         private double _value;
         private double _maxValue = 100.0;
         private float _sweep = 10;
@@ -35,7 +36,9 @@ namespace BlackCoinMultipool.UI.Android.Views.Controls
         private RectF _rectGauge = new RectF(0, 0, 0, 0);
         private RectF _rectValueText = new RectF(0, 0, 0, 0);
         private RectF _rectUnitText = new RectF(0, 0, 0, 0);
+        #endregion
 
+        #region Public Properties
         public double Value
         {
             get
@@ -51,7 +54,6 @@ namespace BlackCoinMultipool.UI.Android.Views.Controls
                 Invalidate();
             }
         }
-
         public double MaxValue
         {
             get
@@ -66,7 +68,6 @@ namespace BlackCoinMultipool.UI.Android.Views.Controls
                 Invalidate();
             }
         }
-
         public string Unit
         {
             get
@@ -80,9 +81,10 @@ namespace BlackCoinMultipool.UI.Android.Views.Controls
                 Invalidate();
             }
         }
+        #endregion
 
         /// <summary>
-        /// Constructer required for Layout Editor compatibility.
+        /// Constructer required for (ADT) Layout Editor compatibility.
         /// </summary>
         /// <param name="context"></param>
         /// <param name="attrs"></param>
@@ -115,6 +117,9 @@ namespace BlackCoinMultipool.UI.Android.Views.Controls
             Initialize();
         }
 
+        /// <summary>
+        /// Does some Paint initialization
+        /// </summary>
         private void Initialize()
         {
             _textPaint = new Paint(PaintFlags.AntiAlias | PaintFlags.FakeBoldText);
@@ -213,6 +218,8 @@ namespace BlackCoinMultipool.UI.Android.Views.Controls
                 float textWidth = _textPaint.MeasureText(_unit);
                 canvas.DrawText(_unit, _rectValueText.Left + (_rectValueText.Width() - textWidth) / 2f, _rectValueText.Bottom + (_rectValueText.Height() * 1.2f), _textPaint);
             }
+
+
         }
     }
 }

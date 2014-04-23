@@ -27,9 +27,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/button_donation_bitcoin_button"
         android:layout_margin="20dp"
-        local:MvxBind="Click CopyToClipboardCommand" />
+        local:MvxBind="Click CopyToClipboardBitcoinCommand" />
     <ImageView
-        android:src="@drawable/donate_qrcode"
+        android:src="@drawable/donate_qrcode_bitcoin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"

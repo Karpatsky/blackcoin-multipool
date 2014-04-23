@@ -737,49 +737,52 @@ namespace BlackCoinMultipool.UI.Android
 			public const int donate_qrcode = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int ic_action_donate = 2130837551;
+			public const int donate_qrcode_bitcoin = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int ic_action_refresh = 2130837552;
+			public const int ic_action_donate = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int ic_errorstatus = 2130837553;
+			public const int ic_action_refresh = 2130837553;
 			
 			// aapt resource value: 0x7f020032
-			public const int ic_successstatus = 2130837554;
+			public const int ic_errorstatus = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int Icon = 2130837555;
+			public const int ic_successstatus = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int roundedbg = 2130837556;
+			public const int icon = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int roundedbgdark = 2130837557;
+			public const int roundedbg = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int splash = 2130837558;
+			public const int roundedbgdark = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int vpi__tab_indicator = 2130837559;
+			public const int splash = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int vpi__tab_selected_focused_holo = 2130837560;
+			public const int vpi__tab_indicator = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int vpi__tab_selected_holo = 2130837561;
+			public const int vpi__tab_selected_focused_holo = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int vpi__tab_selected_pressed_holo = 2130837562;
+			public const int vpi__tab_selected_holo = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int vpi__tab_unselected_focused_holo = 2130837563;
+			public const int vpi__tab_selected_pressed_holo = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int vpi__tab_unselected_holo = 2130837564;
+			public const int vpi__tab_unselected_focused_holo = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int vpi__tab_unselected_pressed_holo = 2130837565;
+			public const int vpi__tab_unselected_holo = 2130837565;
+			
+			// aapt resource value: 0x7f02003e
+			public const int vpi__tab_unselected_pressed_holo = 2130837566;
 			
 			static Drawable()
 			{
@@ -797,17 +800,17 @@ namespace BlackCoinMultipool.UI.Android
 			// aapt resource value: 0x7f040005
 			public const int MvxBindingTagUnique = 2130968581;
 			
-			// aapt resource value: 0x7f040030
-			public const int action_statistics_about = 2130968624;
-			
 			// aapt resource value: 0x7f04002e
-			public const int action_statistics_donate = 2130968622;
+			public const int action_statistics_about = 2130968622;
+			
+			// aapt resource value: 0x7f04002c
+			public const int action_statistics_donate = 2130968620;
+			
+			// aapt resource value: 0x7f04002b
+			public const int action_statistics_refresh = 2130968619;
 			
 			// aapt resource value: 0x7f04002d
-			public const int action_statistics_refresh = 2130968621;
-			
-			// aapt resource value: 0x7f04002f
-			public const int action_statistics_settings = 2130968623;
+			public const int action_statistics_settings = 2130968621;
 			
 			// aapt resource value: 0x7f040003
 			public const int bottom = 2130968579;
@@ -819,13 +822,13 @@ namespace BlackCoinMultipool.UI.Android
 			public const int button_donation_bitcoin_button = 2130968585;
 			
 			// aapt resource value: 0x7f04000c
-			public const int button_donation_button = 2130968588;
+			public const int button_donation_blackcoin_button = 2130968588;
 			
 			// aapt resource value: 0x7f04001e
 			public const int button_settings_clear = 2130968606;
 			
-			// aapt resource value: 0x7f04002c
-			public const int contentFrame = 2130968620;
+			// aapt resource value: 0x7f04002a
+			public const int contentFrame = 2130968618;
 			
 			// aapt resource value: 0x7f040014
 			public const int editTextAddress = 2130968596;
@@ -839,8 +842,8 @@ namespace BlackCoinMultipool.UI.Android
 			// aapt resource value: 0x7f040015
 			public const int layout_gettingstarted = 2130968597;
 			
-			// aapt resource value: 0x7f040029
-			public const int layout_statistics = 2130968617;
+			// aapt resource value: 0x7f040027
+			public const int layout_statistics = 2130968615;
 			
 			// aapt resource value: 0x7f04001a
 			public const int loadingImage = 2130968602;
@@ -866,11 +869,11 @@ namespace BlackCoinMultipool.UI.Android
 			// aapt resource value: 0x7f040017
 			public const int page_gettingstarted_pager = 2130968599;
 			
-			// aapt resource value: 0x7f04002a
-			public const int page_stats_indicator = 2130968618;
+			// aapt resource value: 0x7f040028
+			public const int page_stats_indicator = 2130968616;
 			
-			// aapt resource value: 0x7f04002b
-			public const int page_stats_pager = 2130968619;
+			// aapt resource value: 0x7f040029
+			public const int page_stats_pager = 2130968617;
 			
 			// aapt resource value: 0x7f040013
 			public const int textViewEnterYourAddress = 2130968595;
@@ -902,35 +905,29 @@ namespace BlackCoinMultipool.UI.Android
 			// aapt resource value: 0x7f04001c
 			public const int textView_settings_currentlysetaddress = 2130968604;
 			
-			// aapt resource value: 0x7f040028
-			public const int textView_stats_datejoined = 2130968616;
-			
-			// aapt resource value: 0x7f040027
-			public const int textView_stats_datejoinedlabel = 2130968615;
-			
-			// aapt resource value: 0x7f040022
-			public const int textView_stats_last24hours = 2130968610;
-			
-			// aapt resource value: 0x7f040021
-			public const int textView_stats_last24hourslabel = 2130968609;
-			
-			// aapt resource value: 0x7f040026
-			public const int textView_stats_lastpayout = 2130968614;
-			
-			// aapt resource value: 0x7f040025
-			public const int textView_stats_lastpayoutlabel = 2130968613;
-			
-			// aapt resource value: 0x7f040024
-			public const int textView_stats_miningdays = 2130968612;
-			
-			// aapt resource value: 0x7f040023
-			public const int textView_stats_miningdayslabel = 2130968611;
-			
 			// aapt resource value: 0x7f040020
-			public const int textView_stats_totalprofit = 2130968608;
+			public const int textView_stats_latestpayout_scrypt = 2130968608;
 			
 			// aapt resource value: 0x7f04001f
-			public const int textView_stats_totalprofitlabel = 2130968607;
+			public const int textView_stats_latestpayout_scrypt_label = 2130968607;
+			
+			// aapt resource value: 0x7f040022
+			public const int textView_stats_latestpayout_sha256 = 2130968610;
+			
+			// aapt resource value: 0x7f040021
+			public const int textView_stats_latestpayout_sha256_label = 2130968609;
+			
+			// aapt resource value: 0x7f040024
+			public const int textView_stats_shares_scrypt = 2130968612;
+			
+			// aapt resource value: 0x7f040023
+			public const int textView_stats_shares_scrypt_label = 2130968611;
+			
+			// aapt resource value: 0x7f040026
+			public const int textView_stats_shares_sha256 = 2130968614;
+			
+			// aapt resource value: 0x7f040025
+			public const int textView_stats_shares_sha256_label = 2130968613;
 			
 			// aapt resource value: 0x7f040004
 			public const int top = 2130968580;
@@ -1019,28 +1016,31 @@ namespace BlackCoinMultipool.UI.Android
 			public const int SettingsView = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int SplashScreen = 2130903052;
+			public const int shift_listviewitem = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int StatisticsHashrateFragment = 2130903053;
+			public const int SplashScreen = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int StatisticsSha256HashrateFragment = 2130903054;
+			public const int StatisticsHashrateFragment = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int StatisticsShiftsFragment = 2130903055;
+			public const int StatisticsSha256HashrateFragment = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int StatisticsStatisticsFragment = 2130903056;
+			public const int StatisticsShiftsFragment = 2130903056;
 			
 			// aapt resource value: 0x7f030011
-			public const int StatisticsView = 2130903057;
+			public const int StatisticsStatisticsFragment = 2130903057;
 			
 			// aapt resource value: 0x7f030012
-			public const int zxingscanneractivitylayout = 2130903058;
+			public const int StatisticsView = 2130903058;
 			
 			// aapt resource value: 0x7f030013
-			public const int zxingscannerfragmentlayout = 2130903059;
+			public const int zxingscanneractivitylayout = 2130903059;
+			
+			// aapt resource value: 0x7f030014
+			public const int zxingscannerfragmentlayout = 2130903060;
 			
 			static Layout()
 			{
@@ -1230,32 +1230,38 @@ namespace BlackCoinMultipool.UI.Android
 			// aapt resource value: 0x7f0a0036
 			public const int SettingsCurrentlySetAddress = 2131361846;
 			
+			// aapt resource value: 0x7f0a0039
+			public const int ShiftsPayout = 2131361849;
+			
 			// aapt resource value: 0x7f0a0038
-			public const int StatisticsAgo = 2131361848;
+			public const int ShiftsProfitability = 2131361848;
 			
 			// aapt resource value: 0x7f0a0037
-			public const int StatisticsDateJoined = 2131361847;
-			
-			// aapt resource value: 0x7f0a0039
-			public const int StatisticsDay = 2131361849;
+			public const int ShiftsTimestamp = 2131361847;
 			
 			// aapt resource value: 0x7f0a003a
-			public const int StatisticsDays = 2131361850;
-			
-			// aapt resource value: 0x7f0a003b
-			public const int StatisticsLast24hProfits = 2131361851;
-			
-			// aapt resource value: 0x7f0a003c
-			public const int StatisticsLastPayout = 2131361852;
-			
-			// aapt resource value: 0x7f0a003d
-			public const int StatisticsMiningDays = 2131361853;
-			
-			// aapt resource value: 0x7f0a003e
-			public const int StatisticsTotalProfits = 2131361854;
+			public const int StatisticsAgo = 2131361850;
 			
 			// aapt resource value: 0x7f0a003f
-			public const int THashPerSecond = 2131361855;
+			public const int StatisticsCurrentSharesScrypt = 2131361855;
+			
+			// aapt resource value: 0x7f0a0040
+			public const int StatisticsCurrentSharesSha256 = 2131361856;
+			
+			// aapt resource value: 0x7f0a003b
+			public const int StatisticsDay = 2131361851;
+			
+			// aapt resource value: 0x7f0a003c
+			public const int StatisticsDays = 2131361852;
+			
+			// aapt resource value: 0x7f0a003d
+			public const int StatisticsLatestPayoutScrypt = 2131361853;
+			
+			// aapt resource value: 0x7f0a003e
+			public const int StatisticsLatestPayoutSha256 = 2131361854;
+			
+			// aapt resource value: 0x7f0a0041
+			public const int THashPerSecond = 2131361857;
 			
 			// aapt resource value: 0x7f0a0023
 			public const int kHashPerSecond = 2131361827;

@@ -25,9 +25,9 @@
         android:text="@string/DonateCopyToClipboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_donation_button"
+        android:id="@+id/button_donation_blackcoin_button"
         android:layout_margin="20dp"
-        local:MvxBind="Click CopyToClipboardCommand" />
+        local:MvxBind="Click CopyToClipboardBlackcoinCommand" />
     <ImageView
         android:src="@drawable/donate_qrcode"
         android:layout_width="match_parent"

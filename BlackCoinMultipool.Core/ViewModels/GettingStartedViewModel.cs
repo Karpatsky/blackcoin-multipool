@@ -52,18 +52,11 @@ namespace BlackCoinMultipool.Core.ViewModels
 
             var result = ExtractBitcoinAddress(r);
 
-            //await System.Threading.Tasks.Task.Delay(100);
-
-            //var promptResult = await _dialogService.ConfirmAsync(string.Format("{0}\n{1}\n\n{2}", _commonService.PopupFoundAddress, result, _commonService.PopupIsThisCorrect), okText: _commonService.PopupYes, cancelText: _commonService.PopupNo);
-
-            //if (promptResult)
-            //{
-
-                _settingsService.BlackCoinAddress = result;
+            _settingsService.BlackCoinAddress = result;
 
             if (!string.IsNullOrEmpty(result))
                 ShowViewModel<StatisticsViewModel>();
-            //}
+
         }
 
         private MvxCommand saveAddressCommand;
@@ -77,18 +70,12 @@ namespace BlackCoinMultipool.Core.ViewModels
             }
         }
 
-        private async void DoSaveAddressCommand()
+        private void DoSaveAddressCommand()
         {
-            // save address
-            //var promptResult = await _dialogService.ConfirmAsync(string.Format("{0}\n\n{1}", _blackcoinAddress, _commonService.PopupIsThisCorrect), okText: _commonService.PopupYes, cancelText: _commonService.PopupNo);
+            _settingsService.BlackCoinAddress = _blackcoinAddress;
 
-            //if (promptResult)
-            //{
-                _settingsService.BlackCoinAddress = _blackcoinAddress;
-
-                if (!string.IsNullOrEmpty(_blackcoinAddress))
-                    ShowViewModel<StatisticsViewModel>();
-            //}
+            if (!string.IsNullOrEmpty(_blackcoinAddress))
+                ShowViewModel<StatisticsViewModel>();
         }
 
         private MvxCommand qrCodeHelpCommand;
@@ -104,10 +91,10 @@ namespace BlackCoinMultipool.Core.ViewModels
 
         private async void DoQRCodeHelpCommand()
         {
-            await _dialogService.AlertAsync(_commonService.GettingStartedQRCodePopupText, okText: _commonService.PopupOk);   
+            await _dialogService.AlertAsync(_commonService.GettingStartedQRCodePopupText, okText: _commonService.PopupOk);
         }
 
-        
+
 
         #region Private Methods
         private string ExtractBitcoinAddress(BarCodeResult scannedCode)

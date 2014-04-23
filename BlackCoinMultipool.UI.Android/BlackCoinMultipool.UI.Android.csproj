@@ -189,26 +189,21 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Properties\AndroidManifest.xml" />
+    <Content Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <AndroidResource Include="Resources\Values\SplashStyle.xml" />
     <AndroidResource Include="Resources\Values\MvxBindingAttributes.xml" />
-    <AndroidResource Include="Resources\Drawable\splash.png" />
     <AndroidResource Include="Resources\Drawable\donate_qrcode.png" />
     <AndroidResource Include="Resources\Drawable-hdpi\ic_action_donate.png" />
     <AndroidResource Include="Resources\Drawable-hdpi\ic_action_refresh.png" />
     <AndroidResource Include="Resources\Drawable-hdpi\icon.png" />
-    <AndroidResource Include="Resources\Drawable-hdpi\splash.png" />
     <AndroidResource Include="Resources\Drawable-mdpi\ic_action_donate.png" />
     <AndroidResource Include="Resources\Drawable-mdpi\ic_action_refresh.png" />
     <AndroidResource Include="Resources\Drawable-mdpi\icon.png" />
-    <AndroidResource Include="Resources\Drawable-mdpi\splash.png" />
     <AndroidResource Include="Resources\Drawable-xhdpi\ic_action_donate.png" />
     <AndroidResource Include="Resources\Drawable-xhdpi\ic_action_refresh.png" />
     <AndroidResource Include="Resources\Drawable-xhdpi\icon.png" />
-    <AndroidResource Include="Resources\Drawable-xhdpi\splash.png" />
     <AndroidResource Include="Resources\Drawable-xxhdpi\ic_action_donate.png" />
     <AndroidResource Include="Resources\Drawable-xxhdpi\ic_action_refresh.png" />
     <AndroidResource Include="Resources\Drawable-xxhdpi\icon.png" />
@@ -382,6 +377,8 @@
     <AndroidResource Include="Resources\Drawable-mdpi\blackcointheme_btn_menu.png" />
     <AndroidResource Include="Resources\Drawable-xhdpi\blackcointheme_btn_menu.png" />
     <AndroidResource Include="Resources\Drawable-xxhdpi\blackcointheme_btn_menu.png" />
+    <AndroidResource Include="Resources\Drawable\splash.9.png" />
+    <AndroidResource Include="Resources\Drawable\donate_qrcode_bitcoin.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />
@@ -412,6 +409,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\Values\attrs.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\shift_listviewitem.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

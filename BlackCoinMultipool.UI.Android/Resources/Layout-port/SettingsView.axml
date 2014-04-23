@@ -17,7 +17,7 @@
         android:id="@+id/textView_settings_address"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        local:MvxBind="Text BitcoinAddress"
+        local:MvxBind="Text BlackCoinAddress"
         android:textStyle="bold" />
     <Button
         android:text="@string/SettingsChangeAddress"

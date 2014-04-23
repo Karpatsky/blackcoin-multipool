@@ -181,6 +181,9 @@
     <Compile Include="Views\StatisticsView.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\Layout\DonateBlackcoinFragment.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\Values\Strings.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -403,9 +406,6 @@
     <AndroidResource Include="Resources\Drawable\blackcointheme_ab_background_textured.axml" />
     <AndroidResource Include="Resources\Drawable\blackcointheme_btn_cab_done.axml" />
     <AndroidResource Include="Resources\Layout\StatisticsSha256HashrateFragment.axml">
-      <SubType>AndroidResource</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\Layout\DonateBlackcoinFragment.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\Layout\DonateBitcoinFragment.axml">

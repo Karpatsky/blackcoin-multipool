@@ -42,8 +42,8 @@ namespace BlackCoinMultipool.UI.Android.Views
             SetContentView(Resource.Layout.StatisticsView);
 
             ActionBar.Title = GetString(Resource.String.ApplicationTitle);
-            ActionBar.SetHomeButtonEnabled(true);
-            ActionBar.SetDisplayHomeAsUpEnabled(true);  // < icon erbij
+            ActionBar.SetHomeButtonEnabled(false);
+            ActionBar.SetDisplayHomeAsUpEnabled(false); 
             ActionBar.Show();
 
             _viewPager = FindViewById<ViewPager>(Resource.Id.page_stats_pager);

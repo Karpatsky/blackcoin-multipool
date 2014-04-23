@@ -258,23 +258,23 @@ namespace BlackCoinMultipool.UI.Android
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f01002b
-			public const int MvxBind = 2130772011;
+			// aapt resource value: 0x7f010032
+			public const int MvxBind = 2130772018;
 			
-			// aapt resource value: 0x7f01002f
-			public const int MvxDropDownItemTemplate = 2130772015;
+			// aapt resource value: 0x7f010036
+			public const int MvxDropDownItemTemplate = 2130772022;
 			
-			// aapt resource value: 0x7f01002e
-			public const int MvxItemTemplate = 2130772014;
+			// aapt resource value: 0x7f010035
+			public const int MvxItemTemplate = 2130772021;
 			
-			// aapt resource value: 0x7f01002c
-			public const int MvxLang = 2130772012;
+			// aapt resource value: 0x7f010033
+			public const int MvxLang = 2130772019;
 			
-			// aapt resource value: 0x7f010030
-			public const int MvxSource = 2130772016;
+			// aapt resource value: 0x7f010037
+			public const int MvxSource = 2130772023;
 			
-			// aapt resource value: 0x7f01002d
-			public const int MvxTemplate = 2130772013;
+			// aapt resource value: 0x7f010034
+			public const int MvxTemplate = 2130772020;
 			
 			// aapt resource value: 0x7f010022
 			public const int ahBarColor = 2130772002;
@@ -311,6 +311,9 @@ namespace BlackCoinMultipool.UI.Android
 			
 			// aapt resource value: 0x7f010021
 			public const int ahTextSize = 2130772001;
+			
+			// aapt resource value: 0x7f01002c
+			public const int background = 2130772012;
 			
 			// aapt resource value: 0x7f010006
 			public const int centered = 2130771974;
@@ -351,11 +354,20 @@ namespace BlackCoinMultipool.UI.Android
 			// aapt resource value: 0x7f010010
 			public const int gapWidth = 2130771984;
 			
+			// aapt resource value: 0x7f01002d
+			public const int gaugeBackground = 2130772013;
+			
+			// aapt resource value: 0x7f01002b
+			public const int gaugeForeground = 2130772011;
+			
 			// aapt resource value: 0x7f010018
 			public const int linePosition = 2130771992;
 			
 			// aapt resource value: 0x7f01000f
 			public const int lineWidth = 2130771983;
+			
+			// aapt resource value: 0x7f010030
+			public const int maxValue = 2130772016;
 			
 			// aapt resource value: 0x7f01000b
 			public const int pageColor = 2130771979;
@@ -378,14 +390,23 @@ namespace BlackCoinMultipool.UI.Android
 			// aapt resource value: 0x7f010008
 			public const int strokeWidth = 2130771976;
 			
+			// aapt resource value: 0x7f01002e
+			public const int textColor = 2130772014;
+			
 			// aapt resource value: 0x7f01001a
 			public const int titlePadding = 2130771994;
 			
 			// aapt resource value: 0x7f01001b
 			public const int topPadding = 2130771995;
 			
+			// aapt resource value: 0x7f010031
+			public const int unit = 2130772017;
+			
 			// aapt resource value: 0x7f010009
 			public const int unselectedColor = 2130771977;
+			
+			// aapt resource value: 0x7f01002f
+			public const int value = 2130772015;
 			
 			// aapt resource value: 0x7f010000
 			public const int vpiCirclePageIndicatorStyle = 2130771968;
@@ -1354,6 +1375,36 @@ namespace BlackCoinMultipool.UI.Android
 			// aapt resource value: 3
 			public const int CirclePageIndicator_strokeWidth = 3;
 			
+			public static int[] GaugeView = new int[] {
+					2130772011,
+					2130772012,
+					2130772013,
+					2130772014,
+					2130772015,
+					2130772016,
+					2130772017};
+			
+			// aapt resource value: 1
+			public const int GaugeView_background = 1;
+			
+			// aapt resource value: 2
+			public const int GaugeView_gaugeBackground = 2;
+			
+			// aapt resource value: 0
+			public const int GaugeView_gaugeForeground = 0;
+			
+			// aapt resource value: 5
+			public const int GaugeView_maxValue = 5;
+			
+			// aapt resource value: 3
+			public const int GaugeView_textColor = 3;
+			
+			// aapt resource value: 6
+			public const int GaugeView_unit = 6;
+			
+			// aapt resource value: 4
+			public const int GaugeView_value = 4;
+			
 			public static int[] LinePageIndicator = new int[] {
 					16842964,
 					2130771974,
@@ -1385,8 +1436,8 @@ namespace BlackCoinMultipool.UI.Android
 			public const int LinePageIndicator_unselectedColor = 4;
 			
 			public static int[] MvxBinding = new int[] {
-					2130772011,
-					2130772012};
+					2130772018,
+					2130772019};
 			
 			// aapt resource value: 0
 			public const int MvxBinding_MvxBind = 0;
@@ -1395,20 +1446,20 @@ namespace BlackCoinMultipool.UI.Android
 			public const int MvxBinding_MvxLang = 1;
 			
 			public static int[] MvxControl = new int[] {
-					2130772013};
+					2130772020};
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
 			
 			public static int[] MvxImageView = new int[] {
-					2130772016};
+					2130772023};
 			
 			// aapt resource value: 0
 			public const int MvxImageView_MvxSource = 0;
 			
 			public static int[] MvxListView = new int[] {
-					2130772014,
-					2130772015};
+					2130772021,
+					2130772022};
 			
 			// aapt resource value: 1
 			public const int MvxListView_MvxDropDownItemTemplate = 1;
